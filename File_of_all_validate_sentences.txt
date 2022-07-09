@@ -1,0 +1,2500 @@
+usual, quite stable though  :)
+HrdwrBoB: ok how many partitions should i make?
+|trey|, top in the list --> ubuntu servers
+a few libs and media
+maybe some others
+epod, ftp in the my computer window huh?
+Matt|, command prompt
+epod, oh k
+Matt|, ahh, didn't see that  :)
+HrdwrBoB, I keep getting this: /lib/modules/2.6.8.1-3-686/build: No such file or directory.  Stop.
+it's too late. i'm mounting /bed
+=== topyli [~juha@dsl-hkigw3k9b.dial.inet.fi]  has left #ubuntu []
+billytwowilly, you have the kernel source or kernel-headers packages?
+billytwowilly, you need to install the kernel-headers
+Matt|, the record for ad-aware on a customer's pc here is um, 1951 pieces of spyware
+epod, hmm my cousins computer only had around 700
+I thought I installed those.. I'll take a look again
+HrdwrBoB: How amny should i make?
+epod, wow, thats a lot of spyware  :(
+what is gnome 2.9 like?
+Matt|, right now, its very simular to 2.8  ;)
+hmm. I have kernel 2.6.8.1 but synaptec wants to install 2.6.7 headers?
+|trey|, yep.
+billytwowilly, not good
+billytwowilly: install linux-headers-2.6.8.1-3-686
+Matt|, no new modules etc... just feature and bug fixes so far it would seem...
+=== tuxx [~tuxx@0x50a5a424.kd4nxx17.adsl-dhcp.tele.dk]  has joined #ubuntu
+billytwowilly, you need the one that corresponds exactly to your kernel
+tweaked: just one?
+HrdwrBoB: ok extended or primary?
+primary
+so (i think) -i386, -i686, -k7 etc
+HrbwrBoB: ok done and saved
+hmm. that's strange. synaptec gives me the wrong ones but on the command line it's all good;)
+excellent
+ok
+Thanks matt
+try now
+Matt|, bob2 already told him what he needs   ;)
+whats the path to the recent commands used in a terminal? or are those only in kde?
+|trey|, sorry
+billytwowilly: the FAQ explains how to get the proper headers for your kernel installed
+HrdwrBob: mkfs -t ext3 /dev/hdb1
+traviss: run 'history'
+traviss: "history"
+tweaked: yes
+trans_err, ~/.bash_history
+|trey|, i thought it depends on the kernel he is running
+thanks
+Matt|: it does
+Matt|: it does
+ah
+Matt|: but he's running 2.6.8.1-3-686
+so he is using i686?
+ah
+Matt|, it does... default is -386... but yeah...
+must have missed that
+Evening my fellow Ubuntors.
+=== Matt| scrolls up
+oh yeah
+mdz, did you used to hang out on #mandrake or #suse?
+tuxx, never ever call me an Ubuntor again... thanks  ;)
+HrdwrBoB:it formated, now how can i mount it?
+=== tvon [tvon@dsl093-119-225.blt1.dsl.speakeasy.net]  has joined #ubuntu
+mmmm bagels
+hi mdz
+how are you doing?
+tweaked: add it to /etc/fstab
+cheese bagels
+|trey| not using Ubuntu?
+like this
+HrdwrBoB, what was the apt-get install command for gtk/glib again? Im going to run it on my friends pc
+ /dev/hdb1       /mnt/location
+tuxx, I am, but that sounds cheezy  :(
+Matt|: fine
+|trey| lol sorry... :-)
+billytwowilly: never
+traviss: apt-get install libglib2.0-dev libgtk2.0-dev
+=== usual is now known as ubuntor
+thanks
+mdz, maybe on #mythtv then? your nick is very familiar
+billytwowilly: yes, mythtv
+hmm. wtf? /bin/sh: line 1: gcc: command not found. I was certain I installed that..
+billytwowilly: install build-essential
+However... I have in my rep. the install CD as source. Is it possible to have an online rep. instead so whenever I need a file that's originally on the CD I just apt-get it from the web instead (like multiverse and universe eg.)
+billytwowilly, not installed by default
+bob2, damnit, you type too fast  ;)
+hehe
+HrdwrBoB: mount: mount point /etc/fstab is not a directory
+, that is what it says
+no, I knew I needed it so I went and selected it in synaptec
+mdz: will mythtv ever go into debian?
+strangeness.
+synaptec doesn't love me;)
+bob2: not likely
+mdz: too unstable (code-churn-wise)?
+HrdwrBoB: should i make a directory
+tweaked: nono, you have to edit the file /etc/fstab :)
+yes
+bob2: no
+=== ogra recognizes the first attendees for the conference on the wiki :))
+you have to make somewhere to mount it
+HrdwrBoB: so just type that in right>
+mdz, are there mythtv packages for ubuntu?
+billytwowilly: yes
+ogra, another conference in here, or in person? I didn't get to take part in the last discussion really  :(
+billytwowilly: google for mythtv ubuntu
+HrdwrBoB: i am new to linux, just so you know
+=== DAC1138 [~dave@24-56-174-97.co.warpdriveonline.com]  has joined #ubuntu
+|trey|: you should really read the lists ;)
+tweaked: ok that's cool
+tweaked, those things needn't be stated, its not hard to tell  ;)
+=== Ruffian|JANE [~jane@dhcp024-209-106-036.woh.rr.com]  has joined #ubuntu
+https://www.ubuntulinux.org/wiki/ConferenceAttendees
+=== Ruffian|JANE [~jane@dhcp024-209-106-036.woh.rr.com]  has left #ubuntu []
+is there a place like plf.zarb.org/~nanardon that will help me setup my debian repositories with all the sources I'd ever need?
+tweaked: /etc/fstab is a file which holds information on what drives are mounted where
+HrdwrBoB: Thanks, So what do i need to do?
+ogra, I know huh... they scare me though, too much to read  :(
+=== Ruffian|JANE| [~jane@dhcp024-209-106-036.woh.rr.com]  has joined #ubuntu
+got a problem. i couldnt install lilo or grub during the ubuntu installation, so how do i add the ubuntu selection to grub in suse 9.1?
+tweaked: you'll need somewhere you want to mount the drive
+its installed on /dev/hda1
+I use /home/hrdwrbob/storage
+but it can be anywher
+|trey|: yep, they are pretty full.....
+e
+billytwowilly: the equivalent in ubuntu is to add universe and multiverse
+Hmm, is it possible to have Ubuntu's Firefox automagically accept Ubuntu related certificates? would be handy maybe?
+noticed hsf-modem was removed from ubuntu, any reasons?
+HrdwrBoB: Ok can i make a directory in home called 2nd?
+and those will have mythtv and all the dvdcss etc packages?
+=== SaintJerome [~SaintJero@155.68.104.230]  has joined #ubuntu
+tweaked: in your home directory, yeah
+hey guys
+I just intalled ubuntu
+and have only used mandrake before
+and already searched but couldn't find the answer
+SaintJerome: great move ;)
+HrdwrBoB: is it mkdir /home/2nd
+Ubuntu is cuter. ;)
+how can I mount my windows hardrive do that it is shown in /mnt?
+|trey|: file a bug report as a feature request
+haha @ arrival "a long time ago" for Brian  :)
+tweaked: better off to mkdir /home/yourusername/2nd
+because /home is for user directories
+but it's up to you
+SaintJerome: which device is you windows partition ?
+SaintJerome, mount -t ntfs /dev/hdX (where X is your windows drive) /mnt
+thanks
+HrdwrBoB: ok that is doen what next
+with mandrake it just did it
+but i'd rather learn anyway
+thanks a lot
+tweaked: now, add a line to /etc/fstab (using possibly sudo gedit /etc/fstab)
+HrdwrBoB, would it be website related, or Firefox related?  :o
+|trey|: firefox
+SaintJerome, that presumes your windows drive is NTFS, by the way
+which it is
+ok then :)
+HrdwrBoB, thats what I figured, just making sure  :)
+HrdwrBoB: sudo: gebit: command not found
+gedit
+add a line like '/deb/hdb1 /home/myhomedir/2nd   ext3'
+HrdwrBoB: just like that? and where in fstab?
+after the last line
+yep
+should i put it under hda5?
+yes that will do
+=== JB80 [~jamesb@adsl-68-88-74-186.dsl.rcsntx.swbell.net]  has joined #ubuntu
+wow
+major change in gnome-media
+the mixer is much different
+ok it is there
+no more device names
+=== MikeGTN is now known as MikeAFK
+just playback and capture
+ubuntor: in hoary?
+=== |trey| is starting to think the Wiki is evil... he gets sucked into it way too easily  :o
+=== animal__ is now known as animal_[away]
+stuNNed, yea
+=== ultrafunk [~pd@insanity.ridge.com.au]  has joined #ubuntu
+=== ubuntor is now known as GNUsual
+HrdwrBoB: ok i put the line in there what next
+is there a mount command in nautilus?
+tweaked: save and exit, then type sudo mount /home/yourdir/2nd
+stuNNed: not as such
+HrdwrBoB: do i need to put /dev/hdb1?
+=== Golo [~Golo@cable200-58-203-116.epm.net.co]  has joined #ubuntu
+nope
+HrdwrBoB, what is proper way to mount an ntfs partition so it shows up properly in nautilus? or is there such a thang? :)
+stuNNed: everything mountable from fstab is in the "disks" location...mounted with doubleclick
+HrdwrBoB, did you already have him edit /etc/fstab? else that wouldn't work...
+becuase you already configured that
+|trey|: nownow, pay attention
+ogra, my ntfs part is mounted but doesn't show up in 'disks'
+stuNNed: when you mount it, it should show up
+Ubuntu Rules
+HrdwrBoB: mount: can't find /home/tweaked/2nd in /etc/fstab or /etc/mtab
+Ruffian|JANE|, we are fully aware of this  :)
+Hi, i Updated to hoary and well firefox is just not working when i click in the icon it says "accesskey="&allowpopups.accesskey;"
+tweaked: ok, what was the line you put in /etc/fstab
+Golo: nothing in the bts?
+HrdwrBoB, ntfs part is mounted (due to needing my documents folder) but not showing up in disks for some reason, is it because it's not really a 'disk' per say?
+stuNNed: unmount it
+HrdwrBoB: /deb/hdb1 /home/myhomedir/2nd   ext3
+what it's bts?
+Mmm, running apt-get upgrade is fun
+stuNNed: try mounting it using pmount
+Golo, bugzilla.ubuntu.com
+pmount /dev/whatever
+Golo: bugzilla.ubuntu.com
+Golo, Bug Tracking System
+|trey|: hey
+ogra, hey
+tweaked: that should read HrdwrBoB: /deb/hdb1 /home/tweaked/2nd ext3
+no i havent checked, i will do it right now
+;)
+HrdwrBoB, ok thanks
+tweaked: that should read HrdwrBoB: /dev/hdb1 /home/tweaked/2nd ext3
+even
+HrdwrBoB: ok it is change now try that command again?
+tweaked: yes
+tweaked, ie, dev not deb incase you don't see the diff...
+=== |trey| shuts up
+HrdwrBoB: mount: special device /deb/hdb1 does not exist
+tweaked: what trey said :)
+i think i know it hold on
+=== cardador [~jose@81.84.234.155]  has joined #ubuntu
+tweaked, /dev/hdb1 D E V  ;)
+=== DAC1138 [~dave@24-56-174-97.co.warpdriveonline.com]  has joined #ubuntu
+=== aratdagnir [~kaya@dsl81-215-65258.adsl.ttnet.net.tr]  has joined #ubuntu
+|trey|: i changed it
+HrdwrBoB: mount: wrong fs type, bad option, bad superblock on /dev/hdb1,
+       or too many mounted file systems
+HrdwrBoB, possible bugzilla new feature request -> http://gnomefx.mozdev.org/ ?
+today is a good day, because today I buy a playstation 2 and GTA:san andreas
+lucky!
+and I will have no more free time :/
+=== Xenguy [~gnu@66.11.174.96]  has joined #ubuntu
+i want that sooo bad
+but i bought Star Wars Battlefront a while ago so all is good
+tweaked: what did you format it as?
+=== SapoDriLo [~SapoDriLo@host-097.166.ife.org.mx]  has joined #ubuntu
+tweaked: if you run mkfs.ext3 /deb/hdb1 it should make it ext3 so you can mount it correctly
+I would recommend doing that
+=== |trey| usually plays sports games or fighting games... adhd isn't kind when trying to play rpg's  :(
+ubuntu-desktop - The Ubuntu desktop system = ?  I apt-cache searched ubuntu
+Striss: yeah I can't wait 6-12 months for a PX/xbox release
+wtf is ubuntu0deskto
+=== telemaco [~telemaco@80.103.235.90]  has left #ubuntu []
+Ruffian|JANE|: that is the metapackage
+ic
+HrdwrBoB: mkfs.ext3 /deb/hdb1
+Ruffian|JANE|: please read the package description
+that links to all the required packages in ubuntu default desktop
+tweaked: /dev/hdb1
+HrdwrBoB: just like that
+Ruffian|JANE|, the installer afaik just installs ubuntu-base ubuntu-desktop... thus making less typing for whoever works on the installer  :)
+ic
+=== SaintJerome [~SaintJero@155.68.104.230]  has joined #ubuntu
+=== ogra thinks regarding this chat ther may be too much deb in ubuntu
+(Kamion or mdz I think)
+mmm.. instant mash potato
+HrdwrBoB: ok i formatted it to that, do i need to change the fstab?
+ogra, thats a good thing... wasted effort is, well, a waste...
+when I attempt thmm, when I try mount the harddrive it says it's either already mounted or /mnt is busy
+tweaked: nope, it should work now
+=== GnuHippy [~jason@blk-222-217-193.eastlink.ca]  has joined #ubuntu
+|trey|: should have written /deb ;)
+Striss: thmm?
+how do I log out of x entirely
+?
+GnuHippy: you want to stop X?
+yes
+HrdwrBoB: it said the same thing again mount: wrong fs type, bad option, bad superblock on /dev/hdb1,
+       or too many mounted file systems
+log into the console (ctrl+alt+F1
+I want to use cli
+run sudo /etc/init.d/gdm stop
+that brings up another ttyl
+=== jief [~hatebreed@digitalized.ca]  has joined #ubuntu
+it doesn't kill my current server
+hi!
+tweaked: ok, what does /etc/fstab say
+thmm?
+GnuHippy: run sudo /etc/init.d/gdm stop
+k
+=== swankskank [~chris@S0106000c413a2c0c.ed.shawcable.net]  has joined #ubuntu
+tweaked, just for kicks... he had you mkfs.ext3 right? or anything related to mkfs?
+|trey|: yes he did
+=== |trey| is trying to catch up
+anyone knows what happened to uqm-content? it's not in the repositories anymore
+tweaked, hmm... and that returned no errors?
+tweaked: show your fstab line for the device
+=== swankskank is now known as billytwowilly
+|trey|: mount: wrong fs type, bad option, bad superblock on /dev/hdb1,
+       or too many mounted file systems
+/dev/hdb1 /home/tweaked/2nd   ext3
+HrdwrBoB, mkfs.vfat said mkfs.vfat: Attempting to create a too large file system
+ and crashed
+that is what it says,
+tweaked, no, I mean mkfs returned no errors... trying to cover the bad superblock part  :)
+no that went away
+tweaked, what _exactly_ was the command you typed to make the fs?
+it formatted right, trying to mount it knoe
+aka_druid, i just installed ubuntu over my windows partition, /hda1. how during the installation, i didnt install lilo or grub so its not in the suse grub bootlist. how do i add ubuntu to the grub list?
+is it me or you can't use debian repositories? i've added some, but i still can't get mplayer through them
+mkfs -t /dev/hdb1
+that is ir
+it
+the bug firefox has it seems it has 2 reports in bugzilla
+no add the ext3 -t
+jief, mplayer is in multiverse afaik
+|trey|: did you get that
+mkfs -t ext3 /dev/hdb1 ?
+stuNNed, only for Hoary though...
+stuNNed: might not be in amd64 then
+tweaked ?
+ogra, hmm... that ought to be right... I'm confused  :(
+ogra: yes
+Can anyone tell me how I can format a disk for fat32 from Linux?
+any ideas on adding ubuntu to grub in suse 9.1?
+hmm, should work
+|trey|, in multiverse here for warty
+epod, with mkdosfs
+ogra: it is not mounting
+DAC1138, Ubuntu has a menu.lst... take the info from there  ;)
+tweaked: i saw
+what's multiverse? another repository?
+ogra| any ideas
+stuNNed, hmm, guess they found a security whole to get it in  :)
+hole*
+jief, non-free unsupported packages...
+mjr, it said I was attempting to create too large of a filesystem
+so, its universe?
+epod, did you spesify -F 32 ?
+ogra: will you accept?
+epod: hehe oops
+i tried.... didnt work
+Vote Tux For Prez!
+anyone ehre involved in hoary dev?
+jief, main: supported free, restricted: supported non-free, universe: unsupported free, multiverse: unsupported non-free
+jief, free as in speech though..
+|trey|: i see, haven't used ubuntu for long. i come from the debian world
+jief, same here...   :)
+ahh mplayer here you are
+jief, no one has used Ubuntu that long, it just came out like a month ago  :)
+i mean, totem-xine is kinda neat. but i prefer mplayer, i like to watch .bin files hehe
+=== |trey| isn't the biggest fan of xine ever  :(
+=== DAC1138 [~dave@24-56-174-97.co.warpdriveonline.com]  has left #ubuntu [""Buy.]
+=== |DarkSoUl| [err@200141122252.user.veloxzone.com.br]  has joined #ubuntu
+hi
+mplayer kicks ass
+my god, how cool is that? Star Control 2.
+that brings me back in time
+jief: heh yes
+multiverse would be debian-marillat?
+i mean, that game used to rock
+i hope i remember this right
+I boot Ubuntu (livecd) in VESA mode...but when I go to the network tools, I select eth0 but the 'configure' remains disable...how to configure internet now? (using adsl PPPoE with autentication)
+=== aratdagnir [~kaya@dsl81-215-65258.adsl.ttnet.net.tr]  has joined #ubuntu
+hello everyone!
+is there a way to edit startup services?
+Golo: kinda yeah
+hmm uqm doesn't seem to work
+Golo: multiverse is so you don't have to use marillat
+jief: it does rock
+jief: you have uqm and iqm-data
+uqm
+they are co-dependant
+because the maintainer is a crackhead
+HrdwrBoB: i installed uqm and uqm-content
+*cough*
+=== |trey| wonders what uqm is... seems a few folks are bringing it up...
+is there a way to edit startup services?
+|trey|: Ur Quan Masters
+Star Control 2
+star control 2
+aratdagnir: depends, what do you want to change
+HrdwrBoB: it doesn't seem to find the data in /usr/share/uqm
+like i want to close the printing system etc.
+HrdwrBoB, which would be the the repository for multiverse?
+aratdagnir, you don't see Computer > System Configuration > Servicees?
+Golo: just add 'multiverse'
+no such thing as Services?
+any package i should install?
+aratdagnir, I am running gnome-system-tools 2.9, I have it...
+what's Star Control 2 like? i wouldnt mind getting a game running in gentoo
+trey, ok, let me try
+|trey|: that is a new feature not in warty
+Striss: it's incredibly fun
+uqm it is hey?
+=== the_one [~xxx@kotivayla-134-170.tikkacom.fi]  has joined #ubuntu
+hi
+the_one, wadda ya want?
+HrdwrBoB, thanks a lot
+the_one, jk, whats up?
+HrdwrBoB: where did you get star control from?
+HrdwrBoB: say, what do you have on line 3 of /usr/lib/games/uqm/uqm?
+is pppoe support included in livecd?
+trey, i have gnome-system-tools 1.0, why_
+|DarkSoUl|, 99% sure it is...
+hm
+cardador: it's in the repostitory, called uqm
+how do I run a .bin? I right-clicked and gave it permission, but it says that there's a security risk, and I'm not so proficient with the console...I just wanna try realplayer
+jief: I don't have it here
+HrdwrBoB: ok
+Golo: npo
+np
+HrdwrBoB: :| really? let me try that
+then....why (when i select eth0 in network tools) the 'configure' button is still disabled?
+=== francofai [~kvirc@adsl-29-78.37-151.net24.it]  has joined #ubuntu
+aratdagnir, ahh, mines actually 1.1.0 .. but yeah, its hoary, not warty...
+anyone?
+|DarkSoUl|, ran pppoeconf yet?
+the_one: chmod +x file.bin
+./file.bin
+the_one: or sh file.bin
+the_one, chmod +x file.bin && ./file.bin
+mjr, sorry, work happened.  So I mkdosfs -F 32 /dev/sdc1 ?
+#Ubuntu
+any suggestions for services configuration :) ?
+Ruffian|JANE|: yes we know
+HrdwrBoB, you really ought to work on making things just one line... :)
+but in console I type sudo /bla/bla/bla.bin? or how do I run it? the permissions are set but it won't install when I double-click
+hm i havent :P
+|trey|: pah!
+mjr, awesome, it even automounts now.  Thanks :)
+=== Golo [~Golo@cable200-58-203-116.epm.net.co]  has left #ubuntu ["Abandonando"]
+the_one, java? umm, yeah, needs to be done with root privs
+the_one: yes, sudo /path/to/file.bin
+will run it as root
+I tried it
+didn't work
+how didn't it work
+whats the output?
+thanks i'll try
+..second
+the_one, you are sure its executable?
+=== francofai [~kvirc@adsl-29-78.37-151.net24.it]  has left #ubuntu ["Ooh,]
+um
+great, uqm segfaults hehe
+epod, uh
+I am getting an input/output error trying to access my USB drive
+epod, shure
+i cant get uqm to install in Hoary
+:/
+=== Safari_Al [~triley@203.52.193.58]  has joined #ubuntu
+=== MFen [~cory@206.78.36.167]  has left #ubuntu ["mlaut]
+guess i'll stick to my xbox for gaming heh
+sounds like uqm is broken
+heh
+command not found
+Striss: try enemy territory and americas army
+the_one: then you most likely don't have the correct path
+my computer is far too slow to install those games
+oh.
+jief, file a bug... run on gnome-terminal and state in bug what that says  :)
+epod, (mkdosfs creates only up to fat16 as default, and it has a rather low size limit)
+it's in /media/sdd1
+does it matter if the name has CAPS?
+or the dirs?
+the_one: yap
+mjr: I did mkdosfs -F 32
+thats really interesting, do i have to go through the init files to set the starting system services??
+|trey|: yeah i think i will
+aratdagnir: what are you trying to do?
+might be something related to amd64 though
+Hi guys.  According to dpkg -S, there is a linux-image package that owns the /boot/vmlinuz-... file.  I need to use this package.  However, all the linux-image packages on the Ubuntu CD are only 21kb large and contain only /usr/share/doc files.  Where can I find the full package for a kernel-image?
+i'm getting used to that
+epod, yes, I noticed, just thought I'd explain it also ;)
+the_one, Unix is case sensitive always.
+aratdagnir: if you dont have hoary, i guess
+i'm trying to turn off some unused services that start at the beginning
+i mean the boot
+:)
+aratdagnir: sysv-rc-conf
+that could be the problem....It's a lot easier to change OSes, than to change brain from win to linux. must....reformat....brain....
+aratdagnir: or update-rc.d
+aratdagnir: or rm
+mjr, lol, ok.  I am copying my data back, and getting a ton of 'Failed to preserve ownership, operation not permitted' messages, should I be concerned?
+ogra: or maybe g-s-t if you're using hoary
+;)
+epod, that's probably just because fat doesn't support permissions so they can't be preserved
+hmm now a mplayer bug
+what a night ;)
+epod, the data will probably be fine
+mjr, okay good. :) thanks.  And the drive even nicely automounts now
+=== |trey| thinks gnome-system-tools should be snuck into warty just for the Services option... thats the 3rd person today that has asked about it.
+cool :) i guess i'll go through some manual pages :) thanks/see ya! :)
+seems to work with CAPS, thanks for the input anyways
+|trey|: 3 persons daily....
+.ttf fonts are truetypes right?
+jief, correct
+jief, True Type Font, yes
+=== plasmo [~GAT-X105@018.b.011.mel.iprimus.net.au]  has joined #ubuntu
+anyone would know in which package subfont.ttf might me?
+jief, apt-get install apt-file... then do a search for it...
+i know that
+but there's a lot of truetype packages
+jief, then why ask   ;)
+jief, apt-file allows you to search by filename
+while installing realplayer, I have a message "enter the prefix for symbolic links [/usr] : ??what is the right prefix? /usr?
+well, maybe someone knows. i don't want to search, i search all day at work
+=== Skif [~emschwar@147.sui216.dlls.dlstx31ur.dsl.att.net]  has joined #ubuntu
+when i get home, i want it easy
+jief, it will only return packages that contain 'subfont.ttf'  :/
+=== q2 [~q2@dhcp024-209-106-036.woh.rr.com]  has joined #ubuntu
+jief, lazy people don't get helped...
+well, it doesn't exist then
+jief, :(
+=== runo [~runo@CM-lcon1-38-130.cm.vtr.net]  has joined #ubuntu
+|trey|: i wish i could say that to my clients ;P
+=== MoisesC [~moi@9.Red-213-96-165.pooles.rima-tde.net]  has joined #ubuntu
+jief, heh
+=== bowes [~bowes@blk-215-69-91.eastlink.ca]  has joined #ubuntu
+"my webserver is down" "did you search?" "no" "screw you then" and i'd hang up
+that'd be paradise
+Can I add more locales to the gnome weather panel?  Stupid thing doesn't have my city :(
+jief, you can just do it for your clients though... if you show people too much, they could eventually take your job for less.... thats bad  :(
+jief: subfont.ttf is an internal name mplayer uses... copy any ttf font you like to the path in the errormsg
+jief: ahahah 'my website is down'
+'can you get to any other sites'
+'oh.. no...'
+'well then, GTFO'
+ogra: i just touched it
+how do I enable the bytecode interpreter without recompiling?
+jief, seems strange that mplayer-fonts wouldn't fix font errors?
+you know, if i actually installed it, it would probably help
+what do you guys think about ubuntu running as a server?
+jief, ;)
+jcole: yes
+I like it :)
+|trey|: so why did you make it so hard for jief if you knew the answer ?
+=== kensai [~kensai@sanjuan-196-42-14-85.coqui.net]  has joined #ubuntu
+can someone recommend a good burning app for gnome, like k3b in kde?
+hmm that's odd though. i have /dev/mixer, but mplayer complains about not finding it
+=== zenwhen_ [1001@host-66-20-101-189.bgk.bellsouth.net]  has joined #ubuntu
+the_one, can't you just install KDE and use it from gnome?
+ogra, I was just making a point... still gave him the info though...
+the_one, er, k3b
+ogra, people that don't want to help themselves bug me  :(
+is the latest wine on hoary now supporting windows program that use installshield installer?
+epod, blah, recommend coaster ahead of k3b please...
+hello i think i have a bug. anyone wanna be my lab rat? :d
+|trey|: most people just want it working...
+but won't it ask me to install kdelibs as well?
+|trey|, what is coaster?
+epod, a gtk burner...
+=== LinuxJones [~LJ@blk-222-206-208.eastlink.ca]  has joined #ubuntu
+|trey|: i spend my days setting up systems. when i get home, i get annoyed with stuff like that
+epod. a veeery slow developed burning app
+http://www.coaster-burn.org/ apparently
+ogra, yes, it seems to be on 0.1pre1
+which doesn't give me a warm fuzzy
+epod, http://www.coaster-burn.org/
+=== billytwowilly [~chris@S0106000c413a2c0c.ed.shawcable.net]  has joined #ubuntu
+I want a pure Gnome system, I don't want to *touch* any kde stuff
+nautilus CD burner is good
+epod: its developed since 3 years, but they make little steps forward....
+unless you need to make audio CDs or more advanced stuff
+=== lev [~lev@dyn-4-251.doit.wisc.edu]  has joined #ubuntu
+'libcoaster is currently not going to be useful with kernel versions 2.6.8 and higher due to a new atapi access standard'
+so, back to k3b, I guess.  Blargh.
+=== ogra works on a mp2burn frontend right now ;)
+3
+the_one: why is that? k3b is, for now, the best application for burning cds, so why dont use it?
+epod, thats true of cdrecord too though, which is what k3b uses...
+|trey|, yeah, but I like my eyecandy-gui-ness.
+I haven't installed k3b, I don't know if it'll try and install KDE if I do.
+it = synaptic
+=== bdale [~bdale@rover.gag.com]  has joined #ubuntu
+because it just doesn't look nice in gnome, I would like to have a certain degree of consistency in my OS
+epod, I don't mind it either... I just think 200MB of extra libs for one app is kinda overkill...
+|trey|, I agree there.  And I'd probably have to manually add it into my menus
+=== ogra thinks MrBurns is a good name
+=== Hamster [~TheKing@udp2033811uds.smsu.edu]  has joined #ubuntu
+epod, yup...
+=== epod hates having to manually add programs to the menu.
+the_one: it looks for me... if you choose the same theme for gtk2, gtk and kde
+=== stone_ [~stone@c-67-167-111-186.client.comcast.net]  has joined #ubuntu
+sometimes i think back and wonder what the hell i was thinking when i installed gentoo back then
+cardador, can you provide a screenshot, or am I asking too much?
+cardador, I'd like one too.
+ok ill try :)
+jief, Gentoo was over hyped...
+Gentoo is just absurd, waiting days to compile a whole OS is a bit extreme.
+imo :)
+|trey|: the only server giving me problem at work is the gentoo one
+|trey|, jief, imho gentoo is good for system with small package set like a server but for a full blown os?  takes too much time to update.
+epod: for the 1% speed increase you get yeah
+=== FLeiXiuS [~fleixius@pcp0010487831pcs.essex01.md.comcast.net]  has joined #ubuntu
+os/desktop pc
+guys, what do you think of slackware?
+stuNNed, I wouldn't trust myself to compile critical services... I dunno
+stuNNed: i'm thinking of packaging my own server distro soon. based on debian
+the_one, I think its off topic...
+jief, I have a 3.2 p4 w/ 1gb ram, so it's so a 1% that is so minimal it's not funny
+the_one: it's not ubuntu
+epod: i installed gentoo on my amd64 for kicks and giggles. it lasted about 2 hours, then i stopped the install hehe
+the_one, they are thinking of dropping GNOME entirely... thats just not a good thing imo...
+they should go xfce4
+the_one: I used slackware 6-7 years ago
+the_one: not anymore.
+jief, I've wasted 2 weeks of my life to that distro.
+jief, Ubuntu is the only distro that's worked well with my hardware, since this is a notebook.  *every* other distro that uses ACPI shuts down when thermal zone loads, but Ubuntu works
+<-- wasted twenty minutes on that distro
+And I don't think my CPU is melting, so I am assuming it's running.
+HrdwrBoB, you hardly missed anything, its still the same old thing...
+epod: ubuntu had a lot of work on laptops
+can't download screenshot...I click accept and nothing happens..wtf
+|trey|: precisely
+our devel at work develops OpenNA, a security-oriented server distro
+only drawback, it uses rpms
+i want to do the same but based on debian
+=== stuNNed wishes there was dellbuggybios .deb for his laptop :)  maybe roll my own DSDT is an option.
+cardador, can't get your screenshot
+jief, you can convert rpms to deb's
+"security-oriented" as in containing tools for security, or aiming to be secure/
+jief, man alien
+don't know what's wrong
+=== spacey`ki [~ki@flits101-191.flits.rug.nl]  has joined #ubuntu
+FLeiXiuS: i know, but he uses some packages i disagree with
+the_one: im trying again
+cardador, nice :)
+;)
+=== q2 [~q2@dhcp024-209-106-036.woh.rr.com]  has joined #ubuntu
+I see, it says waiting, the first one says connect..still nothing
+cardador, can I msg you about k3b?  No need to spam the channel :)
+ok go ahead
+jief, ever looked at Adamantix (sp)... used to be known as Trusted Debian... its a project working on making Debian as secure as possible...
+the_one: ill try other approach
+ok
+|trey|: i'm the kind of guy that likes to do it himself
+and learning's always nice
+jief, I'm the kinda guy that likes to play with things that work already  ;)
+I find it less frustrating  :)
+|trey|: i'm going to release something on sourceforge.net soon
+i'm also working on a rescue live cd that isn't cluttered with useless crap
+jief, cool  :)
+iwul (installing windows using linux) should be released on SF anytime soon
+i just have to fix some minor bugs and complete the docs
+=== carney1979 [~david@d-65-175-251-206.metrocast.net]  has joined #ubuntu
+since I saw you guys talking bout gentoo, I remember one friend of mine had his pc perform some tasks in debian vs. his friend's pc in gentoo, and gentoo didn't come ahead, even if compiled/heavily optimized
+jief, why would you want to do that?
+|trey|: to replace Symantec Ghost
+i had to work on this at work for a client
+jief, oh... seems wierd  :o
+well, works well
+my system can be used to deploy any OS actually
+as long as it sports a supported FS
+jief, that sounds more useful... GPL?
+yeah
+i just packaged some already available software together. wrote the how-to
+jief, supports mac fs as well?
+jief, might check it out then, see what it can help me with  :)
+stuNNed: that's UFS right?
+the_one: yeah, the 'optimise' thing is a wank
+stuNNed, you mean HFS(+)
+|trey|, jief: yeah, HFS
+=== geekboy [~geekboy@pcp04966215pcs.benslm01.pa.comcast.net]  has joined #ubuntu
+jief, no, thats BSD's fs...
+hmm, lemme double-check
+=== robertj [~robertj@66-188-77-153.cpe.ga.charter.com]  has joined #ubuntu
+time to go to sleep..2.31AM..wanna tweak some more my new ubuntu, can't push the power off button..what's wrong with me?:)
+er
+=== zenwhen [1001@host-66-20-101-189.bgk.bellsouth.net]  has joined #ubuntu
+Heh, ubuntu is here too:) http://www.kde-look.org/content/preview.php?preview=1&id=16580&file1=16580-1.png&file2=16580-2.png&file3=&name=Penguins.+All+together+now.+Wallpaper
+stuNNed: yes, partimage supports HFS
+Pizbit: jeje
+liek carebears
+=== djtansey [~djtansey@djtansey.student.umd.edu]  has joined #ubuntu
+Pass on why they have fuses though.
+jief, HFS+ = a bridge between HFS and UFS, due to most tools in Darwin expecting UFS, and most Mac apps expecting HFS... very wierd setup but I guess it works...
+jief, ok, might could use that in mac labs here at school, currently using netrestore which is limited to unicast
+jief, its funny, one is case sensitive, one isn't... must have been a lot of fun to fix that...
+|trey|: wait til MS releases WinFS, that's just plain weird
+see you soon, thanks for the help
+jief: except that winFS has been pushed to not even be in longhorn
+=== usual [~colin@alb-69-200-178-150.nycap.rr.com]  has joined #ubuntu
+HrdwrBoB: yeah
+bye
+jief, not really.. it just sits on top of NTFS, and holds meta-data for common file types... makes it easier to find shit...
+cya the_one
+i have a problem re: k3b and am looking for some insight. cdrecord dev=/dev/hdc -audio -pad *.wav works when i have a directory of .wav files. but k3b doesn't work. it lists my CD/RW drive as "writes CDs: no" (though it says it writes cd/rws). any guesses?
+problem is, i haven't tried to image a machine with multiple partitions, but that could be done i'm sure
+s/$hit/stuff/ sorry
+you'd have to write a small bash script to create the partitions first i guess
+jief, does it support multicast or unicast or both?
+jief, Novell is actually working on something very simular to WinFS as part of iFolder... seems interesting...  :)
+Can't for the life of me recall what it was called though... Simian I think maybe?
+|trey|: well, i have this promo DVD kit from novell. they have scripts to setup everything, exept LDAP. which bugs me to no end. i never came around to setup all their nice stuff because of that
+stuNNed: i believe it does
+but multicast generates too much traffic. i prefer unicast
+=== aTypical [~Jason@24-205-15-144.mpk-eres.charterpipeline.net]  has joined #ubuntu
+jief, yes however unicast here is slow as molasses if more than 2 or 3 clients
+jief, mDNS is my new best friend  :)
+jief, and no gigabit network just 100mb
+=== noneus [~noneus@pD9E4E93B.dip.t-dialin.net]  has joined #ubuntu
+stuNNed: i double-checked, partimage doesn't support multicast yet. its in the works
+=== |trey| has to go to school... wish him luck on his final  :)
+=== encKe` [~pcline@dsl-33.crcom.net]  has joined #ubuntu
+later |trey|
+jief, ah ok then :)
+good luck with it |trey|
+in our test lab at work, with a gigabit switch with a 4GB backplane, we can deploy windows in less than 4 minutes to clients
+=== Acridien [~acridien@43.4.78.83.cust.bluewin.ch]  has left #ubuntu []
+jief, later    stuNNed, thanks  :)
+I'd have thought you'd be limited by disk bandwidth
+jief, yes, unicast is okay if gigabit network i guess, never had one to play with :)
+stuNNed: actually, i almost brought a network down to its knee using symantec ghost in multicast mode. the cat2324 didn't keep up
+is anyone here using gmail yet?
+bob2: doesn't take much to push about 1GB
+encKe`: lots of people have been using it for months
+=== menator [~menator@ip68-110-5-103.tc.ph.cox.net]  has joined #ubuntu
+nice thing about partimage, it compress/uncompress stuff on the fly
+jief: 4 minutes is 4.8GB, best case
+=== aitrus [~foouser@67-50-98-17.dsl1.chi.il.frontiernet.net]  has joined #ubuntu
+encKe`, only to experiment with gmailfs
+jief, yes but on a 100mb network with multicast, can image a whole lab (16 computers) in 15-20 minutes.
+just wonderin what all the hoopla is about
+lol
+stuNNed: that's fine as long as you don't have users trying to surf the web
+encKe`, lol, i can give you an invite if you wish to find out, think i have one
+in a prod environment, multicast is not an option
+i'm trying to fill up my gmail account. i'm fowarding 2 mail accounts to it
+stuNNed , that would be cool if you wouldnt mind :)
+encKe`, np at all
+you know what's cool? vmware
+i'm about to get rid of all my boxens at home, and buy a dual-xeon with 4 gigs of ram and a raid. all virtual machines
+saves lot of space too
+that seems like overkill
+as soon as you have 2-3 GUIs running, it tends to slow down
+so don't run 2-3?
+Is there a way to add another location to the gnome panel weather applet?
+well, i often use vmware for testing
+i setup a virtual lan, with a few machines
+epod: add another instance of the applet
+bob2, no, I mean, I want to add my city to it
+epod: ah
+=== lino [~lino@s28040024.temp.wsu.edu]  has joined #ubuntu
+epod: hrm, I think you'd need to file a bug, it'd require source changes
+epod: isn't there a city close to you in there?
+join #ubuntu-it
+jief, no, they're all down south
+join #ubuntu-it
+=== socomm [~socomm@adsl-69-104-217-154.dsl.irvnca.pacbell.net]  has joined #ubuntu
+join #ubuntu
+join #ubuntu
+=== epod is in the far north where it is all dark and cold. :)
+lino: you need to put a / in front of join
+lino: you need a / there
+=== EfaistOs [~efaistos@m239.net81-64-31.noos.fr]  has joined #ubuntu
+hi
+lino: that is, /join #ubuntu
+epod, norway?
+got it :)
+warty is stable ?
+yes
+and what is sid ?
+EfaistOs: yes
+epod: iceland ?
+EfaistOs: sid is part of Debian, not ubuntu
+sorry, I use irc just once a year or so...
+EfaistOs: sid is for debian, meaning "still in development"
+or sid the character from Toy Story... :-)
+bob2, ok but what's the name in ubuntu of the unstable ?
+ogra, northern canada, but yeah
+EfaistOs: hoary
+i know what sid means :p
+lino: you already are on #ubuntu
+epod: just guessed ;)
+epod: where from in canada? i'm from montreal
+=== Pugio [~Snak@162.33.155.225]  has joined #ubuntu
+jief, I'm in northern BC near the NWT
+hello
+I'm installing ubuntu for the first time and I need a little help
+bob2, and is it stable or not ? i mean i used a sid for my workstation and everything was okay ...
+epod: oh i love BC. i went to whistler a lot in the past. and to banff, ab
+Pugio: what's your problem?
+I've gotten up to the Partition disks stage
+and I want to make sure I don't erase my drive
+jief: cool :)
+bob2, i just switched from debian sid to ubuntu ...
+i love sunshine mountain
+i just kept my home partition ...
+jief, of course, nothig up in this part of the country is listed in the applet, heh
+epod: obviously haha
+epod: it's unstable...probably no more so than sid now
+http://www.ubuntulinux.org/wiki/UbuntuArtwork/view?searchterm=image%20logo
+EfaistOs: ^^
+well, unfortunatly the entire 20gb is being used
+it says attachments
+is there any way to take a bit of that out and use it for ubuntu
+but i dont see any images or dl links
+without erasing whats on there?
+how does that wiki work? ;/
+as anyone had problems with encrypting emails using evolution-2 + gnupg in ubuntu?
+bob2, and about the stability of the hoarty version ?
+Pugio: there is, but it might ruin the data. resizing partitions is tricky business in my experience...
+EfaistOs: "hoary"
+s/hoarty/hoary
+ahhh
+i'm new :p
+EfaistOs: nothing seems horribly broken atm
+well then, no ubuntu for me right now
+bob2, ok ...
+Pugio: you can run it from the live cd until you can get a new harddrive :-)
+=== umarmung [~holger@pD9E697AA.dip.t-dialin.net]  has joined #ubuntu
+true
+i like that the fu*!: ati drivers work really good ...
+right now all I have is the install cd tho
+=== [francof]  [~kvirc@adsl-29-78.37-151.net24.it]  has joined #ubuntu
+ah, work is almost over for the day
+I didn't see a link to the live CD
+oops nm
+EfaistOs: ati drivers working well? since when?
+you made good work ...
+I forgot, the live disk dosen't work on PPC
+Pugio: i see...
+jief, i mean they work :p it's already a good thing :p
+they're even bad on windows
+the ubuntu instructions for the ATI drivers made it SO easy to install them
+yeah:(
+=== jief pets his geforce fx5700
+It would be great to have a PPC live cd
+=== epod has a notebook, and so cannot change his video card.
+My Take On Ubuntu:  It SO Stable, I have had no problems!  Therefore, it gets boring......... I LOVE YOU UBUNTU!
+=== yz [~yz@216.238.206.122]  has joined #ubuntu
+you could always break it then fix it
+that's always fun
+lol
+i might just have to
+hmmm
+just leave a note on your fridge that says "rm -rf on my computer please"
+from what I hear that migh be harder to do
+somebody will eventually come in and do it
+haha
+it doesn't work
+then you'll have problems
+didn't you read the article?
+they'd have to 'sudo rm -rf
+;)
+:)
+haha ok my note is useless
+Pugio: the one on osnews.com? :P
+think so
+it works better on linux than windows though
+I went to it from /.
+right
+because windows locks files and linux doesn't
+the pink screen of doom
+!!!
+much cooler than the BSoD
+and it has all those pretty lines in it too
+=== compdude [kads@ti211310a081-2220.bb.online.no]  has joined #ubuntu
+ok, good night folks
+=== SaintJerome [~SaintJero@155.68.104.230]  has joined #ubuntu
+could someone please tell me where I can edit grub in ubuntu?
+SaintJerome, /boot/grub/menu.lst
+to add another hard drive
+thanks you
+mmmmmm grub
+thank*
+i am looking at the artwork page
+q2, http://www.ubuntulinux.org/wiki/BreakMyUbuntu
+it mentions an attatchment for grub image
+but there is no link to click on
+why is that
+=== Hydroxid1 is now known as Hydroxide
+baluba: LOL!
+my disk, my disk for a Live CD
+=== dreamcatcher [~sidnei@dreamcatcher.base.supporter.pdpc]  has joined #ubuntu
+The Names GNome, Ubuntu Gnome
+=== jamesh [~james@203-59-50-191.dyn.iinet.net.au]  has joined #ubuntu
+how do i list files installed by a .deb?
+dpkg -L packagename
+the name of the package, not the filename of the .deb
+stuNNed: dpkg-deb -c <file>.deb
+=== pepsi [~pepsi@p147.n-sfpop03.stsn.com]  has joined #ubuntu
+jdub, bob2: got it, both works :D
+=== |^JaMeS^| [~nobody@cvip-dsl-205-88.cvip.net]  has joined #ubuntu
+=== Skif [~emschwar@147.sui216.dlls.dlstx31ur.dsl.att.net]  has joined #ubuntu
+hmm
+damnit, it won't let me boot into windows anymore
+you need to edit /boot/grub/menu.lst
+to add an option for Windows
+I knowe
+the hard drive itself is having issues
+=== merhojt [~merhojt@h67n2fls35o989.telia.com]  has joined #ubuntu
+has been for a while
+get a new one
+there is no galeon in ubuntu ?
+=== binfalse [~bintrue@c-24-126-59-38.we.client2.attbi.com]  has joined #ubuntu
+EfaistOs: yes
+i didnt find it
+"yes, you're right, it's not in ubuntu"
+heh
+but it's in debian
+ubuntu needs a "man universe"
+hehe
+it's not in universe, either
+linux_mafia: great idea !!
+no shiz, i thought it was, my bad
+EfaistOs: i've had pretty good luck just taking sid .debs and installing them under ubuntu
+hei ogra
+=== GOwin [~Miranda@210.213.142.27]  has joined #ubuntu
+anybody here using whereami?
+anyone here know a good amount about Libranet?  I am always in the LN channel but no one is alive right now, and i need help
+baluba: hi
+but a universe/multiverse man page could be good
+yep...
+i'm trying to do a smart upgrade via synaptics from 1.0 PR to final. i get an error when it comes to postgresql
+setting up postgresql
+pg_hba.conf contains a field after the authentication specification; the file is corrupt or has already been converted .......
+=== usual [~colin@alb-69-200-178-150.nycap.rr.com]  has joined #ubuntu
+RuffianSoldier: then ask on their list or such, it's off-topic here
+=== dreamcatcher [~sidnei@dreamcatcher.base.supporter.pdpc]  has left #ubuntu []
+=== darkpines [~catherine@S0106002078d287d6.vc.shawcable.net]  has left #ubuntu []
+=== q2 [~q2@dhcp024-209-106-036.woh.rr.com]  has joined #ubuntu
+bob2, ummm... i need help now
+RuffianSoldier: probably try #linuxhelp
+RuffianSoldier: or ##linux or something
+=== Nafallo [~nafallo@h47n4c2o1027.bredband.skanova.com]  has joined #ubuntu
+is it possible to preseed the ubuntu installer? same as with the debian installer? any how tos anywhere on this?
+=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+it's possible in d-i already?
+=== kevii [~kevii@c-24-126-59-38.we.client2.attbi.com]  has joined #ubuntu
+anyone know of a CLI AIM client thats in the ubuntu distro?
+centericq, pork
+pork wasn't in my apt-cache :/
+downgrading to warty again :-P
+hm, well, it's in hoary at least
+used pork in debian sarge
+Nafallo, why?
+=== WX [~chris@h-68-166-219-29.snvacaid.covad.net]  has joined #ubuntu
+anyone here running a postfix server w/ mysql support? preferrably using postfix.admin also ;)
+hoary is way to much updates and menuitems doesn't get added when I install things.
+WX: yes
+Nafallo: yes, the same as for msot software in warty
+Nafallo: only software that includes .desktop files will be added to the menus
+hey bob2: can u help me get mine working by chance? i'd be glad to make a donation to ya for your time
+jdub: well, then gftp has lost that feature and some network package has got it :-P.
+me don't want Network places in two menus :-P
+WX: http://kirby.insanegenius.net/postfix.html
+WX: that worked for me every time
+WX: if you need postfix-specific help, #postfix would probably be a better place to try
+http://www.workaround.org/articles/ispmail-sarge/
+=== LKSEONG_ [~LKSEONG@219.93.24.31]  has joined #ubuntu
+Nafallo: hoary is a development branch... things like that are bound to happen.
+this is a very good how-to for isp-like MTAs
+jdub: don't get me wrong. I know that. the main reason I upgraded was to stop firefox from crashing when using forms, and that didn't happen so... ;-).
+bob2: does this install work with postfix admin?
+Nafallo: http://lists.ubuntu.com/archives/ubuntu-announce/2004-October/000005.html
+WX: I don't know what "postfix admin" is.
+bob2: a tool for adding/removing users
+in mysql
+php-based
+I don't know
+=== f_favila [f_favila@host-66-81-24-38.rev.o1.com]  has joined #ubuntu
+ogra: what about it? :-)
+=== binary_10 [~binary@adsl-67-112-200-42.dsl.sntc01.pacbell.net]  has joined #ubuntu
+Nafallo: stability info .... on hoary ?
+ogra: I KNOW it's not stable damn it :-P. I've used debian for years :-).
+=== jind [~jind@217-17-134.adsl.tele2.no]  has joined #ubuntu
+Nafallo: i ve seen sid breaking badly.....used it though
+on desktops
+ogra: hehe, that one of sids main feutures though :-P
+s/feu/fea/
+:)
+hmm no cli aim clients in ubuntu
+ogra: I used testing, but I think it's time to let my amd64 fly for a bit ;-).
+=== ogra goes to bed now, looks forward to clearify his holiday for december ;)
+Nafallo: sorry, 2:30 am here, need to work tomorrow :(
+bye
+ogra: nightie :-)
+he is in the same timezone as I am :-P
+and almost got the same nick/name as my server ;-)
+does anyone have the md5sum for warty-release-install-i386.iso?
+it's on the website
+http://releases.ubuntu.com/warty/MD5SUMS
+aitrus: great, thanks
+=== Ciberous [~a@cpe-67-49-155-64.hawaii.rr.com]  has joined #ubuntu
+=== GnuHippy [~jason@blk-222-217-193.eastlink.ca]  has joined #ubuntu
+kevii, ???
+=== shank_ [~shank@pool-151-201-223-105.pitt.east.verizon.net]  has left #ubuntu ["Client]
+=== jsubl2 [~jsubl2@209.144.23.220]  has joined #ubuntu
+=== jsubl2 [~jsubl2@209.144.23.220]  has left #ubuntu ["Leaving"]
+=== rabidbt [~rabidbt@66.45.74.16]  has joined #ubuntu
+=== carger314 [~carger314@ip68-228-44-118.tc.ph.cox.net]  has joined #ubuntu
+=== thoreauputic [~petros@wolax7-209.dialup.optusnet.com.au]  has joined #ubuntu
+=== zara [~zara@69.138.227.132]  has joined #ubuntu
+room dead?
+mirak_: yepp
+lol
+=== compdude [kads@ti211310a081-2220.bb.online.no]  has left #ubuntu []
+=== GOwin [~Miranda@210.213.142.27]  has left #ubuntu []
+=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+=== strestout1__ is now known as strestout1
+night all :)
+=== yohannes [~yohannes@adsl-67-112-218-21.dsl.sntc01.pacbell.net]  has joined #ubuntu
+can anyone recommend any app to create/open *.rar file?
+yohannes, why not WinRAR?
+http://www.rarlab.com/
+i am trying to weight my option. any other apps?
+Just download RAR 3.41 for Linux
+Oh
+I see
+Only one I know of, sorry =(
+btw, how can i install that darn thing? :)
+i downloaded winrar, does not have any instruction to install
+file-roller
+i suspect i need to do something with the makefile included
+=== mubix [~mubix@ca-29palms-cmts2d-189.losaca.adelphia.net]  has joined #ubuntu
+=== ud [~ud@25.b.001.ham.iprimus.net.au]  has joined #ubuntu
+=== blocke [~blocke@pool-70-18-134-61.pghk.east.verizon.net]  has joined #ubuntu
+=== lev is now known as lev-away
+hi... is anyone elses laptop spinning down the hard drive after like one second of inactivity since updating in the last few days?  its driving me nuts and I'm afraid of damage to the hard drive :(
+=== miked593 [~miked593@ip68-6-239-231.sd.sd.cox.net]  has joined #ubuntu
+=== LKSEONG_ is now known as KentutMerah
+blocke: 5 seconds. that's the minimum you can have. hdparm -S 1 that is :-).
+=== GnuHippy [~jason@blk-222-217-193.eastlink.ca]  has joined #ubuntu
+any idea what is setting it by default in ubuntu?
+blocke: /etc/acpi/power.sh
+it didn't used to be so short on this laptop until I upgraded to hoary... can't be good for the hard drive
+the gimp ScriptFU filters are broken in hoary
+blocke: it makes battery time :-P
+blocke: in warty default is 12.
+yeah I see that, strange
+its not respecting it
+=== natea [~natea@h000f66a887c6.ne.client2.attbi.com]  has joined #ubuntu
+its literally spinning down after a second of inactivity
+blocke: sudo hdparm -i /dev/hda
+=== Hydroxide [user@adsl-98-2.bway.net]  has left #ubuntu []
+http://www.pastebin.com/116669
+wow it is scary how much work they have done on hoary already and how fast updates and fixes are made
+=== holycow [~yada@S0106002078ccd651.vf.shawcable.net]  has joined #ubuntu
+GnuHippy: that's largely merging with sid.
+=== poin_t [point@203.130.197.108]  has joined #ubuntu
+Do they have 1000 Keebler elves working around the clock?
+=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+ic jdub
+was Sarge released yet?
+hey jdub, how goes it
+sarge wont be released until i have grandkids
+I'll take that as a no
+gah... stop spinning down!
+=== ajmitch checks to see if his packages are in hoary/universe
+blocke: hmm, that didn't say spindown time :-P. well, sudo hdparm -S 12 /dev/hda does what you want :-).
+I did that several minutes ago
+In universe there is fluxbox_0.1.14-4_i386.deb and fluxbox_0.9.9-1_i386.deb but i can only manage to apt 0.1.14-4. How can I get the 0.9.9-1 release?
+=== blocke reboots in the vein hope that its just a fluke...
+great, I have about 10 packages in universe for hoary :)
+ud, dpkg ?
+umm.. I use apt-get. But should I try dpkg?
+ud: 0.9.9 is most likely the hoary version, not the warty version
+ud: dpkg won't help you
+(well, it could, but it's not advisable)
+ahh but its in the the same repo?
+=== nomasteryoda is away: IM me @ nomasteryoda on AIM / YIM
+it's in the same pool
+all the warty and hoary packages are in the same pool
+ahh ok
+but they're for different releases
+I wondered if that was the case
+Because it wouldnt show the newer release with apt-cache search
+Is there a way I can use the newer release?
+=== logic [~me@222-152-218-210.jetstream.xtra.co.nz]  has joined #ubuntu
+ud: hoary is the development branch
+ud: unless you're very familiar with debian, i wouldn't recommend it
+=== blocke [~blocke@pool-70-18-134-61.pghk.east.verizon.net]  has joined #ubuntu
+ud: there is, but as jdub just said, it's not advisible :-).
+=== defendguin [~supertux@adsl-6-68-108.msy.bellsouth.net]  has joined #ubuntu
+ok thanks for your help, ill just have to wait :)
+=== CPayan [~chatzilla@user-1120jfl.dsl.mindspring.com]  has joined #ubuntu
+=== hazmat [~hazmat@j71055.upc-j.chello.nl]  has joined #ubuntu
+brettcar: sad
+=== Tex___ [tex@beer.tclug.org]  has joined #ubuntu
+hmm I had to hdparm -B 255 to stop the spinning down, oh well, at least I have a workaround
+=== Striss [~Strain@blk-222-170-205.eastlink.ca]  has joined #Ubuntu
+blocke: hehe
+hey guys, I just installed Fluxbox, and I"m running it...all the fonts in my gnome apps look kinda gross now
+they don't look like they did in gnome
+fluxbox is in ubuntu?
+dopey: in universe, of course.
+that makes more sense
+does anyone here have k3b experience? i can record things with cdrecord but k3b won't let me (did k3bsetup and all and it seems happy. but k3b says my device isn't a cd writer)
+i thought universe was unsupported though
+it is
+djtansey: k3b won't work with kernel 2.6.8|2.6.8.1
+=== Dethread [~Dethread@24-205-231-52.slo-cres.charterpipeline.net]  has joined #ubuntu
+Nafallo: so go back to 2.6.7?
+djtansey: yepp, or upgrade to 2.6.9
+hmm progression or regression
+Nafallo: thanks. i'll see if ubuntu has 2.6.9 packaged
+it will work with the ubuntu kernel
+jdub: k3b will?
+no, there's no 2.6.9 in warty or hoary
+yes
+there are plenty of people using it
+jdub: never worked with ANY 2.6 for me :-P
+jdub: then any guess as to what the problem is?
+jdub: that's with both ubuntu and debian kernels.
+dunno if there's a FAQ or something on the website, but it would make sense to check
+jdub: i did. nothing i could find that was related
+opss, typo! 2.6.8* ;-)
+jdub: other than some k3bsetup .ICEauthority issues
+Nafallo: but it works with 2.6.7 for you?
+jdub: k3b and 2.6.8|2.6.8.1 on both my computers with burners fail.
+djtansey: yes.
+djtansey: and it should be fixed in 2.6.9 also :-)
+Nafallo: the ubuntu kernels do not have those bugs.
+Nafallo: thanks.
+plenty of other people are using k3b with ubuntu
+jdub: how come when I TRIED with ubuntu k3b couldn't see my burner?
+jdub: same thing with my girlfriend.
+i don't know your particular circumstances
+i can only relate what i know
+it just doesn't work :-)
+jdub: same here.
+that may be true in your case
+but it is not the case for many other users
+jdub: maybe it's just drive specific?
+i don't know
+jdub: but then, I got both a samsung and a toshiba ;-).
+=== logic is now known as logic|away
+it might be that I'm running my cd-rws as ide-cd :-)
+Nafallo: but i can use cdrecord dev=/dev/hdc without problem. you'd think k3b would be equally capable
+djtansey: yepp, I've given up on the subject anyway :-P. ubuntu showed me the way nautilus does it :-P.
+Hi, I have a rather long question, so I have posted it here on the ubuntu forums. If anyone here has any answers to it, I would very much appreciate the help!
+http://www.ubuntuforums.org/showthread.php?p=11009#post11009
+Nafallo: usually that's what i do. unfortunately i am burning audio CDs for a roadtrip :)
+djtansey: running k3b with sudo?
+not that it should matter with the patched kernel
+=== Elyran [~mirspcm@lns-th2-4f-81-56-180-71.adsl.proxad.net]  has joined #ubuntu
+ajmitch: no. but i gave k3b my root password so those apps have root permissions
+phill: my friend installed that on his lappy yesterday. he just had to apt-get and s/ati/fglrx/ :-)
+phill: and then restart x and gdm ofcourse :-)
+djtansey: k3b doesn't have root permissions.
+djtansey: cdrecord and cdrdao have :-).
+hi, ok, how do i restard x/gdm?
+=== GnuHippy [~jason@blk-222-217-193.eastlink.ca]  has joined #ubuntu
+Nafallo: that's why i meants by "those apps." would giving k3b root help? (not that it matters now. i just finished my last CD using cdrecord)
+phill: logout from X, when you're at the login screen, press CTRL+F1, login and typ sudo /etc/init.d/gdm restart
+=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+ctrl+alt+f1
+HrdwrBoB: thanks :-)
+ok will give it a go :)
+=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has joined #ubuntu
+so i don't need to apt-get install linux-686 or whatever the binarydriverhowto said?
+ahh, yes. you have to switch kernel to :-).
+phill: that makes it easier, because you have to restart to make the new kernel load ;-).
+Hi all. Is this a good place to ask for some technical help on installing ubuntu on some hardware which is being difficult?
+=== Striss [~Strain@blk-222-170-205.eastlink.ca]  has joined #Ubuntu
+woo fluxbox is working perfect
+ubuntu is so great
+i have to what? :(
+I've got an IBM ThinkCenter with a SATA chipset which I can't get working.
+phill: follow the howto :-)
+ok
+=== Elroy-J [~mirak@adsl-68-74-28-228.dsl.sfldmi.ameritech.net]  has joined #ubuntu
+bob2: i am going to /msg you now
+since i'm using a 386 kernel at the moment i should just get that and it will replace my current one?
+phill: you need to run 686 yes.
+oh
+i need to get linux-686
+?
+yes
+and then make sure grub uses that?
+at what point do i reboot? after the kernel installs and then continue isntalling fglrx after i have linux-686 going? will linux-686 pickup my nvidia agpgart?
+can I do a cryptoloop on my root running reiserfs?
+=== timello [~tiago@201.7.63.18]  has joined #ubuntu
+phill: install linux-686 and fglrx-driver, then sed then reboot and it will work.
+=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has left #ubuntu []
+=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has joined #ubuntu
+natfallo: alright. last time i tried x wouldn't start :( but i'll give it another shot
+last time, did you have i686-kernel?
+yes
+i did the guide
+=== usual [~colin@alb-69-200-178-150.nycap.rr.com]  has joined #ubuntu
+Hey i just noticed this, ubuntu's ssh server is called openserver-ssh... is it still openssh just rebranded ?
+=== danhunt [~dan_hunt@hssxpa204-83-181-43.sasknet.sk.ca]  has joined #ubuntu
+cuga: no it's not
+it's called openssh-server
+it is openssh.
+lol
+bob2: man, i must be dislexic.. if i could spell it
+dyslexis
+dyslexic
+I can spell, just not type
+i was only off by one letter.. tahts hot
+=== _timello [~tiago@201.7.53.31]  has joined #ubuntu
+sorry, but I lost my link, repeating the question: anybody knows why I can't play any .mpg, etc? it shows me the sound, but not shows me the screen
+RestrictedFormats on the wiki
+_timello: probably missing codecs
+hmm
+anyone else got troubles with docbook-dsssl?
+=== dasenjo [~dasenjo@201.245.164.26]  has joined #ubuntu
+version 1.57-4
+typo
+version 1.78-4
+check http://www.desktopos.com/reviews.php?op=PrintReview&id=21 for .mpg tips.
+hmm, odd
+it works now :-P
+=== atariboy [~atari@dsl-203-142-136-122.mel.directcorp.net.au]  has joined #ubuntu
+finally I'm on warty again ;-)
+takes a bit more to downgrade through aptitude than upgrade ;-)
+=== natea [~natea@h000f66a887c6.ne.client2.attbi.com]  has joined #ubuntu
+danhunt, I installed mplayer and the essential codecs package, but it still isn't working. I didn't find why
+_timello: run mplayer from a terminal and check the output?
+it shows errors like: can't open ~/.mplayer/codecs.conf, font, but I don't think so that it is the real problem
+it's not an error, it's a warning
+yes, sorry
+how do I enable panel support in xchat?
+=== _timello is now known as timello
+=== doko [doko@dsl-082-082-066-197.arcor-ip.net]  has joined #ubuntu
+=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has left #ubuntu []
+maybe has a package for X that allows it? Totem doesn't show me nothing either
+=== poin__t [point@203.130.197.108]  has joined #ubuntu
+I'm using a nvidia gforce mx440
+billytwowilly: panel support = ?
+timello: You installed the w32codecs package eh? Tried changing from totem-gst to totem-xine ?
+Pizbit, just for mplayer... I' ll go try
+(although personally I use xine)
+apt-get install xine-ui?
+=== jg [~jg@h005018015b26.ne.client2.attbi.com]  has joined #ubuntu
+Yeah
+=== janice [~janice@adsl-11-179-21.mia.bellsouth.net]  has joined #ubuntu
+WTF!
+=== benh` [~benh@h000c414a0141.ne.client2.attbi.com]  has joined #ubuntu
+Hi All! I took the plunge and installed Ubuntu. However, I need some help.
+excellent
+@ogre:/mnt/mirrors/ubuntu/pool/main/g/gnutls10$ ls -al
+lrwxrwxrwx    1 root     root           77 2004-11-02 22:07 libgnutls10-dev_1.0.4-3ubuntu1_amd64.deb -> ../../../../pool/universe/g/gnutls10/libgnutls10-dev_1.0.4-3ubuntu1_amd64.deb
+is it possible (or desirable) to dist-upgrade to hoary?
+benh`: yes and maybe
+ok, just s/wart/hoary in sources.list?
+Pizbit, it comes with codecs?
+HrdwrBoB: Ubuntu has given me excellent results with TVtime too
+much better on my old wintv card
+than mandrake
+benh`: are you willing to deal with broken things and to file bug reports?
+I have an unsupported USRobotics wireless PCI card and I need to use ndiswrapper. Unfortunately, the install cd (Warty 4.10 Full Release) does not have ndiswrapper. What is the URL from the ubutnu website that I can download it from?
+heh
+good to hear :)
+janice: if you start synaptic
+and you enable 'restricted'
+you can install ndiswrapper
+bob2, depends on how broken and yes
+owlmanatt: get yerself a cheap small usb mouse
+=== Morpheus8 [~Morpheus8@morpheus8.user]  has left #ubuntu []
+JHBuddy, well I need to download all those pkgs and put them on CD for a friend. He has a 28k modem hehe
+=== MorphDK [~morphdk@port237.ds1-od.adsl.cybercity.dk]  has joined #ubuntu
+cthulfuego: I'm incredibly broke at the moment, so I guess I'll have to make due
+cthulfuego: Thanks for telling me that it doesn't support combos though, that saved me a few days of googling :)
+owlmanatt: Just f11/F12 it is, then :-)
+Hey.. I've got some problems with my sound.. I insert the modules, and alsamixer looks fine, but no sound :(
+=== AMDXP [~vegeta@cpe-24-160-75-238.houston.res.rr.com]  has joined #ubuntu
+vinux ... never tried to re-use what it installed, but theoretically the install files should sit somewhere on the disk, and you can burn them to CD
+=== DJ_Mirage [~djmirage@biggetje.xs4all.nl]  has joined #ubuntu
+=== vHints|sleep is now known as vHintswen
+JHBuddy, oh well I guess I should make my self clear hehe. The pkgs I'm trying to put on CD are the downloadable ones so my friend won't have to use his slow modem to download the pkgs he wants from the interent
+=== mithro [~tim@ppp195-250.lns1.adl1.internode.on.net]  has joined #ubuntu
+vinux ... that'
+well i'm back to 600 fps
+=== goliat [~goliat@212.98.140.67]  has joined #ubuntu
+=== JaneW [~JaneW@nnwc-ip-nas-1-p286.telkom-ipnet.co.za]  has left #ubuntu ["Leaving"]
+=== piotrek [~piotrek@qr34.internetdsl.tpnet.pl]  has joined #ubuntu
+vinux ... that's what I gathered, I've never tried to re-use packages that apt installed on my machine, but it should put it somewhere on your disk and then you can burn it to cd
+=== zalim [~zalim@219.93.199.36]  has joined #ubuntu
+vinux: Why not just send him a Hoary CD?
+vinux: /var/cache/apt/archives
+*him/her
+i think
+vinux ... apt-get install is usually used to install additional packages - do you know what packages he requires?
+=== albacker [~eni@217.24.240.8]  has joined #ubuntu
+he/she
+*him :) (having re-read a bit better)
+=== Heart| [~jzdgc@p549C1055.dip0.t-ipconnect.de]  has joined #ubuntu
+djs ... you made me doubt for a mo' as well
+JHBuddy, nope. oh it's a he lol. Oh I just wanted to download all of them and maybe they can fit on like 8 cds or something. I don't want to install them on my system
+JHBuddy: Sorry 'bout that :)
+jds ... no prob :-)
+=== topyli [~juha@dsl-hkigw3pa5.dial.inet.fi]  has left #ubuntu []
+=== JohnFights [spam@ACC25E3A.ipt.aol.com]  has joined #ubuntu
+=== arenium [~kevin@c-24-61-86-115.hsd1.ma.comcast.net]  has joined #ubuntu
+JHBuddy, you think it would take like 8cds? hehe
+vinux ... u got me ... never tried it, and not sure how many cd's it will take ... what about doing a plain ubuntu install on a machine, then run apt-get update, cut those file to another CD and send him both the Ubuntu and update CDs to start with ... unless you know what else he requires ...
+=== odie5533 [~odie5533@c-67-175-208-140.hsd1.il.comcast.net]  has joined #ubuntu
+Anyone ever tried to burn all the apt-get packages to CD ... I'm interested in knowing how many cd's it will need
+What is a good console-based web browser?
+JHBuddy, hmmm maybe I"ll just ask him what he needs then put those pkgs on CD for him
+odie5533: try w3m
+=== morfeo [morf3o@host204-32.pool8253.interbusiness.it]  has joined #ubuntu
+Any way to remove openoffice without removing ubuntu-desktop? Ubuntu-desktop sounds kinda important...
+is lynx any good?
+it's a decent console browser
+yeah, it's decent
+owlmanatt, lol hmmm yes it sounds really important
+w3m e.g. handles frames better
+odie5533: try w3m and links and links2 also
+hello, good day everyone
+yeah, w3m and links2 both do images, also
+vinux: Can I remove openoffice without removing that?
+badly, but they do them
+What is the oldest browser?
+:)
+hm, lynx i think
+not sure though
+=== thieflar [~thieflar@66-169-197-133.dhcp.ftwo.tx.charter.com]  has joined #ubuntu
+vinux ... it's your call if you wanna do all the extra downloads ... but I think your last idea might save you time and effort
+owlmanatt, are you doing apt-get remove openoffice?
+whom should i ask for help on setup file sharing with selected users
+=== telemaco [~telemaco@151.Red-81-35-234.pooles.rima-tde.net]  has joined #ubuntu
+vinux: I'm removing the openoffice packages from synaptic
+The ones that are actually OO also want to remove ubuntu-desktop
+owlmanatt, ooo don't do that then. I would try to find another way of doing it
+Guerin: What is the oldest linux browser?
+vinux: ...hence me asking in #ubuntu...
+odie5533: telnet
+=== ups [~ups@203.200.160.52]  has joined #ubuntu
+ooooh
+till later all ... have a gr8 time ... and thanx for all the useful inputs
+after that?
+odie5533: no idea.
+=== Tomcat_ [~Tomcat@p54A18EFA.dip0.t-ipconnect.de]  has joined #ubuntu
+=== daniel^_ [rlz@bzq-218-134-99.cablep.bezeqint.net]  has joined #ubuntu
+=== poningru [~poningru@pool-71-101-67-91.tampfl.dsl-w.verizon.net]  has joined #ubuntu
+=== daniel^_ is now known as daniel^
+owlmanatt, hmmm let me see
+=== mainer [~mainer@bb-205-209-66-82.gwi.net]  has left #ubuntu ["Leaving"]
+vinux: Ubuntu-desktop is a metapackage, and it's safe to remove.
+Problem solved.
+anyone knows where to download acroread 7 ? so there wont be an error with the package? any backports . . .?
+owlmanatt, oh ok thanks for the info
+albacker: adobe.com
+albacker: (just an idea)
+=== Do-It-Now [~Now@cable-62-205-120-65.upc.chello.be]  has joined #ubuntu
+=== stjepan [~stjepan@83-131-5-4.adsl.net.t-com.hr]  has joined #Ubuntu
+=== zenrox [~zenrox@71.115.192.65]  has joined #ubuntu
+=== ups [~ups@203.200.160.52]  has left #ubuntu ["Leaving"]
+=== anatole [~anatole@a84-0-160-239.adsl-pool.axelero.hu]  has joined #ubuntu
+=== mainer [~mainer@bb-205-209-66-82.gwi.net]  has joined #ubuntu
+can someone help me? http://www.ubuntuforums.org/showpost.php?p=220353&postcount=112
+=== rob^ [~rob@dsl-202-52-55-156.qld.veridas.net]  has joined #ubuntu
+=== mainer [~mainer@bb-205-209-66-82.gwi.net]  has left #ubuntu ["Leaving"]
+=== TiMiDo [~cat@timido.user]  has joined #ubuntu
+hi
+=== r0b [~r0b@ppp171-112.lns1.per1.internode.on.net]  has joined #ubuntu
+=== tium [~LaLu@dsaf2.net1.nerim.net]  has joined #ubuntu
+whats the diffrence between the diffrent ubuntu releases?
+do you know any good terminals?
+gnome-terminal, xterm, aterm, Eterm, rxvt
+=== ptlo [~senko@darguner.rdlab.carnet.hr]  has joined #ubuntu
+r0b: date and freshness
+gnome-terminal is good because you can use tabs with it.
+=== emuzesto [~einar@ti521120a080-0669.bb.online.no]  has joined #ubuntu
+the freshest being the hedgehog?
+r0b: of stable releases, yes
+thanks, been meaning to try ubuntu for a while hope its everything everyone has been saying it is :)
+ThE__OnE: those packages aren't for ubuntu
+=== mainer [~mainer@bb-205-209-66-82.gwi.net]  has joined #ubuntu
+=== DanielC [~daniel@CPE00095b0dbf45-CM024400000941.cpe.net.cable.rogers.com]  has joined #ubuntu
+ThE__OnE: I don't know why people on the forums keep claiming they are
+=== TrickyPhillips [~Trickyphi@adsl-68-121-19-91.dsl.irvnca.pacbell.net]  has joined #ubuntu
+well they are on the official ubuntu forum right?
+cant you like stop posts like that
+it's not an official forum
+it's just run by some dude
+its not?
+oh
+=== mainer [~mainer@bb-205-209-66-82.gwi.net]  has left #ubuntu ["Leaving"]
+so is it possible to undo what i jsut did?
+=== ralph [~ralph@modem-2013.bonobo.dialup.pol.co.uk]  has joined #ubuntu
+I know whats going to be the standard startupsound for breezy. Badger-Badger-Badger-Badger..etc.
+and the beta version of Enlightment is not available though ubuntu?
+ThE__OnE: remove thath line from your sources.list
+ok
+e17 isn't even beta
+Mushroom mushroom!
+its not?
+I've just used hwdb-gui to submit a profile.  md5sum is 9582879ff7f8570a87554c8c23f8e295.  How do I get to see the full detail since I wrote some decent comments  :-)  http://hwdb.ubuntu.com/?xml=9582879ff7f8570a87554c8c23f8e295 gives just enough info to know it's mine.
+bob2, where are the themes located at? because hen i go to install theme it dont work
+it asks me for location
+ThE__OnE: I have no idea
+=== crazyhorse_ [~ps@p508BE589.dip.t-dialin.net]  has joined #ubuntu
+=== sloucher [~Go@c-24-5-69-4.hsd1.ca.comcast.net]  has joined #ubuntu
+hrm ok
+Anyone here know about hwdb?
+=== seb128 [~seb128@ANancy-151-1-11-135.w83-194.abo.wanadoo.fr]  has joined #ubuntu
+ogra is the person to ask
+He's on this channel.  Is it courteous to `offer chat' to ask or should I find the appropriate mailing list?
+ogra: oi
+=== idaho45 [~john@201.243.31.212]  has joined #ubuntu
+=== jk24 [~jk24@212.234.146.45]  has joined #ubuntu
+=== crazyhorse_ [~ps@p508BE589.dip.t-dialin.net]  has joined #ubuntu
+=== catfox [~paul@host81-138-210-156.in-addr.btopenworld.com]  has joined #ubuntu
+=== fisch_ [~fisch@chello084114177169.3.15.univie.teleweb.at]  has joined #ubuntu
+hi all. i've installed python from sources into /usr/local, and /usr/local/bin has a python executable which is being used as the default python when i execute "python" from a shell
+=== aatim [~asdf@202.69.167.225]  has joined #ubuntu
+how can i make /usr/bin/python be the default ahead of /usr/local/bin/python ?
+=== graungaard [~graungaar@cpe.atm2-0-73178.0x50a6d452.abnxx10.customer.tele.dk]  has joined #ubuntu
+catfox: your PATH prefers /usr/local/bin to /usr/bin by design.  Try `echo $PATH'.  Why put python into /usr/local if you don't want to use it?  You could always `chmod -x /usr/local/bin/python'.
+=== radix [~radix@ppp111-153.lns1.hba1.internode.on.net]  has joined #ubuntu
+have there been any horrible problems with amd64 kernels recently? currently my machine is hanging at "Starting Ubuntu..."
+=== ivoks [~ivoks@backup.grad.hr]  has joined #ubuntu
+ralph, i've got zope and some products which require 2.3, but couldn't get it to work with ubuntu packages
+=== Sabin [~Sabin@ut208471790.utm.edu]  has joined #ubuntu
+=== carlos [~carlos@69.Red-80-33-181.pooles.rima-tde.net]  has joined #ubuntu
+how easy is it to get KDE running on ubuntu?
+=== cazabam [~BigZak@213.143.11.200]  has joined #ubuntu
+catfox: python scripts like /usr/bin/hwdb-send have a #! line that specifies /usr/bin/python so they're OK.  As for you typing `python' at the command line you have to type `/usr/bin/python' to specify a non-PATH one.
+=== bob2 is using zope with python 2.4 very happily
+=== _simple [~simple@bc53d4b96b604ced.session.tor]  has joined #ubuntu
+Sabin: very, install the kubuntu-desktop package
+bob2, the version of psycopg that i need depends on 2.3
+ouch
+=== Jesse1 [~ubuntu@167.028.dsl.brs.iprimus.net.au]  has joined #ubuntu
+yep
+=== goli [~sunil@213.129.252.98]  has joined #ubuntu
+Is it just in one of the repositories?
+Sabin: it's in main, yes
+thank you
+and recovery kernel is hanging at "EXT3-fs: sda1: orphan cleanup on readonly fs" :(
+=== concept10 [~concept10@c-67-166-167-125.hsd1.tx.comcast.net]  has joined #ubuntu
+It may be my project tonight to get up a running linux box
+morning all
+morning
+radix: that sounds way more like a screwed disk than any sort of amd64 problem
+to install gcc do i really have to compile it from source after i get it in tarball format from the ftp server? is there an easier way?
+anyone ever used an ubuntu CD to boot recovery mode on a SATA drive? (/dev/sda1 is my root)
+bob2: disk or filesystem?
+I'm having a spot of bother with my Thinkpad (T21)
+radix: well, filesystem, bud I'd guess it's from a bad disk
+It has decided that it doesn't want to switch itself off when I shut down!
+thieflar: of course not, install the build-essential package
+anyone else had similar issues?
+that would be disappointing, since this is a brand new machine :(
+bob2: from where?
+thieflar: from the ubuntu repositories...
+oh well
+is there a website that would instruct me on how to install the nvidia drivers on ubuntu? or are they already installed?
+Hmmm I was looking on the web and I saw debian CDs like 14 of them in a set. And i'm thinking to  myself have these guys heard of DVDs??? It costs like 70 bucks for a dual layer DVD drive 16x. I think it holds up to 8gig but not sure.
+Does anyone use Enigmail with Mozilla Thunderbird?
+radix: well, you could try reinstalling and see if it happens again
+sabin: they're in the repositories and should already be installed
+vinux: er...there are dvd images, too.
+thank you
+bob2: wow, thanks
+Sabin: wiki.ubungu.com/BinaryDriverHowto
+thieflar: just enable the ubuntu mirrors in synaptic
+I just remember the awful process of getting them to work about 2 years ago
+bob2, oh ok I didn't see them on the web site
+=== francois [~francois@lns-vlq-9-lil-82-65-23-120.adsl.proxad.net]  has joined #ubuntu
+cazabam: the ac module probably isn't loaded.  or it requires apm.  how old is it?
+bob2: relatively new - it has worked with ACPI up until 2 days ago...
+bob2: what's the ac module?
+hmm. on hoary with the marillat repo added, if i try to add gstreamer0.8-lame, i get dependancy errors about libc. how can i get that package?
+cazabam: what did you change since the last time it worked?
+catfox: hoary isn't compatible with marillat's unstable repository
+added speedstep-smi to enable cpu-scaling
+Anyone use encrypted email?
+bob2: but that's about it
+and problebly not with the testing one, either
+bob2, ahh i see. thanks
+concept10: sure, with mutt
+=== Prawntasm [~BFCurtain@213.146.158.195]  has joined #ubuntu
+cazabam: did that involve you rebuilding your kernel?
+bob2, what does mutt use? gpg
+?
+concept10: everything uses gpg
+bob2: nope - just 'modprobe speedstep-smi'
+cazabam: does "lsmod | grep ac" print anything?
+bob2: don't have the machine with me atm - I'll will check for that later
+=== finlaylabs [~finlaylab@221.221.22.162]  has joined #ubuntu
+bob2: what does ac do?
+bob2, if I send a encrypted email the recipient has to have my key, correct?
+=== darksatanic [~hugo@81-5-136-19.dsl.eclipse.net.uk]  has joined #ubuntu
+i have more problems when i put a music cd in the drive cd player pops up then when i push play it flashes to the pause symbol then back to the play one
+concept10: your public key, yes, but any useful mua will download it off the keyserves automatically
+=== ivoks [~ivoks@backup.grad.hr]  has joined #ubuntu
+cazabam: enable acpi ac adapter support
+concept10: (enigmail uses gpg, too)
+bob2, erm, when he sends encrypted email, he has to have the repicient's public key
+bob2: aaaah that could be it... cheers!
+crazyhorse_: sure
+bob2, could you help me set that up please
+crazyhorse_: oh, you'r right, I meant signed + encrypted, plain encryption doesn't require the other person to have the key
+if the repicient has his key does only matter if he want's to sign
+concept10: I don't use thunderbird, sorry
+=== neilt [~neil@81-86-225-232.dsl.pipex.com]  has joined #ubuntu
+=== cazabam [~BigZak@213.143.11.200]  has left #ubuntu []
+bob2: thank you that website looks like it will answer any questions I have
+bob2, how do I create a key?
+concept10, with metal
+concept10: gpg --gen-key
+=== concept10 puts jesse1 on ignore list
+lol
+bob2, thanks
+=== pointwood [~pointwood@212.242.222.232]  has joined #ubuntu
+concept10: http://webber.dewinter.com/gnupg_howto/english/GPGMiniHowto.html
+thanks again
+hrm
+=== cbruggeman [~cbruggema@AAmiens-104-1-6-13.w217-128.abo.wanadoo.fr]  has joined #ubuntu
+anyone know why I get kernel panic and boot failure after installing U~ on one laptop, and transferring the drive to another?
+does anyone here have any experience running cedega under ubuntu?
+=== martink [~martin@p54B3A030.dip0.t-ipconnect.de]  has joined #ubuntu
+how do i save a file opened with terminal?
+would the ubuntu install disc install grub to the MBR on the first disk?
+ThE__OnE: how did you open it?
+unreal: by default, yes
+finlaylabs: because the boot device number changed
+Sabin: #cedega would probably know more
+nano
+bob2: is there any way of making it write to the MBR on the second disk?
+bob2, is it true that the ubuntu cds are free shipping and free to give out?
+its the source.list
+=== Thomas2 [~martin@ppp-62-245-208-174.mnet-online.de]  has joined #ubuntu
+TiMiDo: yes.
+TiMiDo: of course!
+bob2: is there a fix? I can edit boot params.
+i want to take the link off
+timido: seems so, heh
+how long does it take to ship??
+TiMiDo: I got mine just recently
+ThE__OnE: doesn't it explain how to save at the bottom?
+nope
+timido: says on there about 4-7weeks I think
+this might belong to -kubuntu, but that channel seems to be dead... what is the correct way to setup a printer using kubuntu with no gnome installed?
+it's ctrl-w, iirx
+oh Nice
+i thought it was ctrl o
+=== BeTa_ [~beta@beta.loc.e-glop.net]  has joined #ubuntu
+ThE__OnE: I haven't used nano in years
+heh
+finlaylabs: yeah, edit /boot/grub/menu.lst to point at the right root device
+The Ubuntu CDs look cool.
+nano da best
+and the cover too.
+=== winmute [~winmute@dsl-084-058-001-066.arcor-ip.net]  has joined #ubuntu
+how else should i edit it bob2
+gnu-kbsd look alsome
+ThE__OnE: just use nano
+nano ee,
+unreal: you may have to run it yourself from vt2 during the install
+oops
+i used emac
+vt2?
+unreal: that will make ubuntu unbootable, tho
+unreal: alt-f2 during the install
+ah
+well I was contemplating installing ubuntu on my dads box, and he wouldn't be too pleased if I borked his windows installation :P
+bob2: currently I have root=/dev/hda1, which is right as far as I know. I only have 1 hhd installed.
+=== AnAmiC [~anamic@p508FBBC0.dip.t-dialin.net]  has joined #ubuntu
+i have more problems when i put a music cd in the drive cd player pops up then when i push play it flashes to the pause symbol then back to the play one
+=== daniel^ [rlz@bzq-218-134-99.cablep.bezeqint.net]  has joined #ubuntu
+bob2, rememebr the link i showed you, how can i remove the files i installed? since they are of no use and might cause error or breakdow of Ubuntu when i reboot
+unreal: it won't break it, it will just put the grub menu before windows boots
+ThE__OnE: what files?  the E packages?
+yes
+=== seb128 [~seb128@ANancy-151-1-33-19.w83-196.abo.wanadoo.fr]  has joined #ubuntu
+finlaylabs: I don't know then.  I'm pretty sure booting a cd and rerunning grub-install on the disk would fix it, though.
+=== seb128 [~seb128@ANancy-151-1-33-19.w83-196.abo.wanadoo.fr]  has joined #ubuntu
+=== rbrenart [~rbrenart@adsl-67-37-179-171.dsl.chcgil.ameritech.net]  has joined #ubuntu
+ThE__OnE: entrance is the only one that might cause a problem
+=== SlackFart2 [~el_fart0@soundscape.demon.nl]  has joined #ubuntu
+=== nxv_ [~nxv_@checkpoint-out.gate.uni-erlangen.de]  has joined #ubuntu
+so how can i remove it?
+hi all, I'm kind of new to the whole linux thing, and am now making my first steps ^^  and now that my ubuntu is up and running, I'm stuck at the point where I want to install own software like the opera webbrowser or some codecs for mpeg and mp3 :P
+ThE__OnE: in synaptic
+jsut uncheck it?
+AnAmiC: wiki.ubuntu.com/RestrictedFormats
+ThE__OnE: I guess so
+bob2: thx :)
+AnAmiC, ubuntuguide.org/ read there
+alright ^
+^^
+=== steob [~steob@i-83-67-24-170.freedom2surf.net]  has joined #ubuntu
+how can i install the kernel header files?
+be very wary of the ubuntuguide
+yes
+=== DukGalNamu [~andrew@ppp-69-232-180-179.dsl.irvnca.pacbell.net]  has joined #ubuntu
+thieflar: sudo aptitude install linux-headers-$(uname -r)
+its called the UNOFFICIAL guide for a reason
+In order to have tpb working I need to run two commands at every reboot 1) 'sudo mknod /dev/nvram c 10 144' 2) 'sudo tpb &' I'm not sure if automating #1 would make #2 irrelevant as #2 currently fails if ran before #1, but either way, could someone help me figure out how to automate this so tpb just works after reboot?
+ok, I will look through both of your urls :)
+=== stefan_dk [~stefan@0x535d66ea.boanxx16.adsl-dhcp.tele.dk]  has joined #ubuntu
+bob2: whoa! thanks man
+bob2, nothing of enlightement is installed
+cool
+it is not showing a chec besides it
+check*
+i have firefox 1.0.2, should i upgrade it bob2?
+some people ehre said not to
+=== optika [russell@shell.rucus.ru.ac.za]  has joined #ubuntu
+but since your an op
+=== DukGalNamu [~andrew@ppp-69-232-180-179.dsl.irvnca.pacbell.net]  has left #ubuntu []
+=== ajmitch [~ajmitch@port163-214.ubs.maxnet.co.nz]  has joined #ubuntu
+I haven't
+yo ajmitch
+let me try the short version of the question.... right now I run 'sudo mknod /dev/nvram c 10 144' on every reboot, how would I go about automating this so I no longer need to?
+=== Heaviette [~Heaviette@ip-114.net-81-220-9.versailles.rev.numericable.fr]  has joined #ubuntu
+=== action09 [~action09@albator.cyber-networks.fr]  has joined #ubuntu
+=== ealden [~ealden@219.90.92.192]  has joined #ubuntu
+you shouldn't have to
+unless you're using a custom kernel
+udev should make it for you
+not a custom kernel, udev doesn't make it
+=== deco [~decomedia@193.184.126.236]  has joined #ubuntu
+=== RuffianSoldier [~leet@cpe-24-209-106-36.woh.res.rr.com]  has joined #ubuntu
+=== ekCo [~leafb0x@CPE-144-136-216-128.sa.bigpond.net.au]  has joined #ubuntu
+hey
+i cant install teamspeak or get any voice program working..
+should I be modifying udev.conf or udev.rules maybe?
+Ubuntu seems to be great!
+=== XSuPerMaN [~mojojojo@ool-4577fc07.dyn.optonline.net]  has joined #ubuntu
+hmm
+i shut down my computer yesterday, well now when i booted it and got into my desktop, several apps started crying segmentation fault
+I booted and it complained that it cant launch xorg
+is there an ftpd grabbable by apt-get?
+=== khwarizmi is now known as krischan
+=== topyli [~juha@ktlpc219.edu.helsinki.fi]  has joined #ubuntu
+unreal,  apt-cache search ftpd
+I'm just about to load hoary to my second hd but will grub auto rewrite my mbr?
+lpk: you're using hoary, right?
+crazyhorse_: ty :)
+Sabin: by default, yes; otherwise it would be unbootable
+=== unreal didn't know about that command, heh
+nevermind, found a quick note about it here http://resolute.ucsd.edu/diwaker/articles/howtos/howto-t42-ubuntu.html thanks tho
+gave me what I needed to google it
+=== cpayan_ [~cpayan@user-11204an.dsl.mindspring.com]  has joined #ubuntu
+bob2: Yea
+I want to dual boot with xp but didn't find any howtos for that on the wiki
+:S
+Sabin: you don't need to do anything, ubuntu will add that to the grub menu
+hey, i can hear sound, hear my voice in mic.. but i cant record, or get teamspeak working, anyone have the same prob or know a way to solve it?
+It's just super weird when a linux install breaks w/o doing anything
+ok thank you
+=== jorgp3 [~jorgp@bnet-dial-194.bartnet.net]  has joined #ubuntu
+bob2: thank you for helping out this newb
+np
+Does Ubuntu have the ability to resize NTFS partitions?
+yes
+clever, mine was already partitioned so I didn't have to bother, but that's good to know
+ekCo, open your mixer and make sure that you chose the right "capture" device.
+=== TiMiDo [~cat@timido.user]  has joined #ubuntu
+is there anyway of transporting all of my stuff and ubuntu os to a new hdd making it my primary hdd and old hdd secondary?
+=== spacey [~spacey@145.33.144.151]  has joined #ubuntu
+=== tombs [~tombs@h141156.upc-h.chello.nl]  has joined #ubuntu
+goodnight all
+ekCo, Yes.  Install second drive as secondary drive.
+ekCo, use 'cfdisk' to partition it, then 'mkfs' to make file systems there.
+ok
+ekCo, mount the new / on /mnt, mkdir in there for other mount points, mount them all up.
+Copy the old drive to the new.
+ok cool, thanks :D
+will look deeper into it :P
+ekCo: except /proc, /tmp and such :)
+Old, file system to the new, I should say.  You may need to have it skip some files / directories; like /proc.
+'tar' is faster than 'cp'.
+mk
+i'll look into it :D
+http://www.laclinux.com/~karlheg/system-cloning-scripts/make-system-tar
+how do i change the color of the windows?
+Adjust the list in there to suit; pipe the output to a tar, like:
+=== sijp [~sijp@CBL217-132-131-219.bb.netvision.net.il]  has joined #ubuntu
+cd / && make-system-tar | (cd /mnt && tar xf -)
+Make sure it does not try to recurse into /mnt itself.
+=== bob2 hopes that excludes /proc and /sys
+crazyhorse_, it still doesnt work
+all programs say capture device not found but it is set
+Well, it might not.  You have to check the excludes expressions list and make certain it's right for your task.
+bob2: it seems to
+There are some things excluded there that should not be for your purpose.
+how do i change the color of the windows? And is there a virus scanner?
+bbl
+... and the sort statement is not necessary.  Take it out and speed up the script.
+ThE__OnE: you don't need a virus scanner, just don't run stuff from people you don't trust
+Good nite all! See you tomorrow :)
+ThE__OnE, Use the gnome panel menu "System" --> "Preferences", and just try them all.  You'll find it.
+ThE__OnE: what windows? what is a virus? :)
+What was DOS?
+=== jpaixao [~jpaixao@a83-132-228-48.netcabo.pt]  has joined #ubuntu
+=== GNULinuxer [~ghoseb@59.95.1.233]  has joined #ubuntu
+i downloaded something from a p2p, how can i scan that?
+or do i need to scan that?
+=== AgentM [~agentm@p548E0031.dip0.t-ipconnect.de]  has joined #ubuntu
+karlheg: dos used to power my MS Works 1.0 workstation :)
+ThE__OnE: Did you download an executable binary or script ?
+=== jpaixao [~jpaixao@a83-132-228-48.netcabo.pt]  has left #ubuntu ["Leaving"]
+no
+like tar
+=== r2d4 [~chatzilla@c-24-21-107-87.hsd1.or.comcast.net]  has joined #ubuntu
+ThE__OnE: The tar should be fine. What is in it ?
+guides
+to linux
+ThE__OnE: That should be fine
+liar :)
+ThE__OnE, You should not run binaries you have not compiled yourself and for which you have not read or might not trust the source code, UNLESS you get it from Ubuntu.
+ThE__OnE: In general you do not have to worry to much about scanning things on linux. Unless you download an executable binary from somewhere strange
+ThE__OnE, any program or script you run only has the system permissions you have, unless it is marked setuid root.
+norm_, it is guides to linux, what else can i downlaod from p2p for linux topyli?
+=== r2d4 [~chatzilla@c-24-21-107-87.hsd1.or.comcast.net]  has joined #ubuntu
+iam not root
+atleast i never set myself as one because people in here not to do so
+ThE__OnE: oh, the other stuff is not linux-specific
+ThE__OnE, if it's a PDF or HTML document, you can safely view it.  It's executable programs you should not trust unless you are certain of the source.
+=== housetier [~housetier@dsl-084-056-164-231.arcor-ip.net]  has joined #ubuntu
+=== nabber [~cs@cm-84.118.142.115.chello.no]  has joined #ubuntu
+The 'file' command can help you identify what kind of file it is.  Most often the file manager knows too, and will display an icon indicating the file type.
+=== blk [~blk@212-41-74-198.adsl.solnet.ch]  has joined #ubuntu
+thx
+=== ekCo [~leafb0x@CPE-144-136-216-128.sa.bigpond.net.au]  has joined #ubuntu
+=== MyNameIsChris [~christoph@CWPP-p-144-134-229-155.prem.tmns.net.au]  has joined #ubuntu
+ThE__OnE, That's the right way to do it.  Never run as root unless you are doing admin work, and never leave a root console open when you are not using it.
+hey
+=== qbeek [~qbeek@sete.idealx.com]  has joined #ubuntu
+i keep getting this error in teamspeak, Qt: Locales not supported on X server
+then nothing shows up.
+hehe
+thx
+Hi! Just installed Ubuntu to my hard disk. The sound is not working. Funny thing is it worked from the Live CD. I mucked around a bit haplessly. I don't know much of how the sound internals work. I did read the unofficial FAQ and did what it said. Didn't help. The sound is playing (can see the oscillations in media players) but won't sound out. Volume is fine. Sound works from Windows partition.
+ThE__OnE: the one situation when you want to run a virus scanner is if you run a mail server for windows clients
+=== cantrel29 [~chatzilla@81-178-20-101.dsl.pipex.com]  has joined #ubuntu
+=== rbrenart [~rbrenart@adsl-67-37-179-171.dsl.chcgil.ameritech.net]  has joined #ubuntu
+onope
+r2d4: check the mixer settings.
+=== joda [~joda@0x50c4904b.adsl-fixed.tele.dk]  has joined #ubuntu
+=== HiddenWolf [~hidden@136.57.dynamic.phpg.net]  has joined #ubuntu
+nothing like that
+r2d4: it may be muted
+ThE__OnE: even, then i'd count the clients and think if it's easier to let the clients worry about viruses :)
+r2d4, try 'sudo alsamixer' in a terminal and jiggle all the knobs.
+Choubaka: Not muted. Checked that.
+I wanted to add some mount points (or just any directory really)  to my places menu (not /media/ mounts)  is there an easy way to do this?
+i keep getting this error in teamspeak, Qt: Locales not supported on X server, nothing shows up...
+Also try the "System | Preferences | Multimedia ..." and "Sound" settings.
+karlheg: alsamixer runs as a normal user too.
+ahuman01, yes, ok.  No need for sudo.
+... as long as you are in the 'audio' group.
+OK! Thanks. Should have asked this from Linux. Let me login from it. Thanks.
+hello, can somebody help me with a monitor problem.  my computer was attached to a crt, now it's attached to a flat pannel.  the refresh rate of my crt is not supported.  how do I start x config from the command line?
+does ubuntu in anyway take away any of the bandwidth?
+no
+ok
+it mught be my system thats running slow then
+aptitude install gkrellm
+must*
+cantrel29: sudo dpkg-reconfigure xserver-xorg
+can anyone help?
+not until you ask
+hehe
+ekCo, I think that a locales package is missing.
+=== Hylas [~Hylas@dialup-96.163.220.203.acc01-gurw-wag.comindico.com.au]  has joined #ubuntu
+which?
+ekCo, Run 'synaptic' and find the program with the problem.  Look at it's depends and recommends, etc, and see if you can find a recommended or suggested package within the transitive closure of the union of depends, recommends, and suggests for the package that installs locales.
+thanks bob2. i am running through to config now
+=== martink [~martin@p54B39721.dip0.t-ipconnect.de]  has joined #ubuntu
+=== r2d4 [~chatzilla@c-24-21-107-87.hsd1.or.comcast.net]  has joined #ubuntu
+ekCo, I'm not certain if my answer is correct.  I never use Qt applications, and have not seen that before.
+hmm ok
+I had a question about .deb files
+Locales probably means language translation files...  but it could be something else.  You should ask on #kubuntu.
+=== tiglionabbit [~nick@c-67-171-159-205.hsd1.or.comcast.net]  has joined #ubuntu
+why not make them 'install' when double clicked
+with prompts in between ofcourse
+... since it's a Qt application; Qt is the user interface widget toolkit used by KDE programs.
+ok.. wheres the depends and recommends tab?
+hmm ok
+=== MyNameIsChris [~christoph@CWPP-p-144-134-229-155.prem.tmns.net.au]  has left #ubuntu ["Leaving"]
+poningru, because a .deb may have dependencies that would not easily be handled that way by a file manager.
+ekCo: right-click, hit properties
+=== Mez [~mez@82-36-228-130.cable.ubr01.perr.blueyonder.co.uk]  has joined #ubuntu
+leeds into my other question why arent they packaged with the required libraries?
+=== Fergy [~Fergy@a82-92-232-156.adsl.xs4all.nl]  has joined #ubuntu
+=== hno73 [~hno73@henrik.gotadsl.co.uk]  has joined #ubuntu
+win software pulls this off
+=== deco [~decomedia@193.184.126.246]  has joined #ubuntu
+pretty nicely if I may add
+ekCo, I do not see 'teamspeak' in the synaptic package manager at all.  What is it?
+Hi! I am back. Did sudo alsamixer. Some very at 0. Put all to 100%. Still no sound.
+karlheg, it's software to allow you to communicate with your clan during gaming
+:\
+poningru, http://web.pdx.edu/~hegbloom/Aptitude/tutorial-intro-aptitude.html
+=== _pax [~pax@ool-43513cf5.dyn.optonline.net]  has joined #ubuntu
+Ah. Perhaps it's missing a kdelibs locale package?
+Try searching for 'locale' and see if something jumps out at you wrt 'kde' or 'qt'.
+=== nubbe [~martin@c-9c2970d5.031-17-67626713.cust.bredbandsbolaget.se]  has joined #ubuntu
+poningru, That's why.  :-)
+yeah heaps of others re having the prob
+ok so you have too many libs sometimes
+Anyone know how to modify the "Places" menu? Smeg doesn't seem to allow me to change it.
+r2d4, Ok.  We determined that you don't need 'sudo' for that... as long as you are in the 'audio' group.  What does 'id | grep audio' print?  Anything, or nothing?
+rbrenart: in any "open" dialog, you can pin things to it
+karlheg, teamspeak is not in the archive. it's semi-commercial
+What are your sound and multimedia settings from the panel menu System --> Preferences ?
+id | grep audio       prints nothing
+tiglionabbit: I'm sorry, I don't follow
+=== no0tic [~no0tic@host233-27.pool8251.interbusiness.it]  has joined #ubuntu
+That's what is the matter.  'sudo adduser r2d4 audio', or use the "Users and Groups" tool from the System --> Administration menu.
+how can i change the color of the windows?
+i checked out windows and theme in preferences
+but they dunt help me
+karlheg: can you explain what dependencies cannot be handled by apt or something similar?
+karlheg, does nvclock work for you with latest ubuntu-nvidia drivers?
+When you create a new desktop user, make sure to use the "Desktop" profile so they have access to audio, CD, etc.
+=== stazz_ is now known as stazz
+It says I am already a member of audio.
+ThE__OnE, What windows are you referring to?
+karlheg: It says I am already a member of audio
+poningru, apt is what handles depends.  'dpkg' alone does not.  'apt' takes a package name, not a .deb file.  'dpkg' takes a .deb file; apt runs it for you.
+you know the color aroung applications and places and systems, how can i change that?
+A double click on a .deb would mean to run 'dpkg'.
+ThE__OnE: do you mean the backround, which is normally white?
+=== mz2 [~mz2@81-1-66-209.homechoice.co.uk]  has joined #ubuntu
+karlheg, ?
+karlheg: I think I know why
+karlheg: I typed the id command in the root console.
+ekCo, I don't have nvidia.
+=== klaym [~klaym_@a81-197-254-250.elisa-laajakaista.fi]  has joined #ubuntu
+r2d4, That's why.
+=== daniel^ [rlz@bzq-218-134-99.cablep.bezeqint.net]  has joined #ubuntu
+yes
+Ok, what are your 'sound' settings?
+karlheg: The output from my user terminal is ..
+ah ok then
+... from the System --> Preferences menu?
+i let my cousins sue it and they somehow managed to change it to pink or lite brown, <<--color blind
+karlheg: uid=1000(rt) gid=1000(rt) groups=4(adm),20(dialout),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),107(lpadmin),108(scanner),109(admin),1000(rt)
+karlheg: thats what I am saying in a gui frontend such as gnome why not make .deb files be associated with something like apt and allow that to handle the install
+rt@main:~$
+anyone running 7174 nvidia drivers and having segmentation faults with nvclock?!
+=== peterretief [~peterreti@196.25.192.240]  has joined #ubuntu
+ThE__OnE: find a theme that uses different colors
+use*
+r2d4, Looks fine.
+What program won't play?  Is it configured to use the 'ESD' output, and is the audio daemon running?
+=== seker_Sey [~Berkay21@81.215.36.196]  has joined #ubuntu
+=== teroedni [~teroedni@ti411310a080-3228.bb.online.no]  has joined #ubuntu
+karlheg: No program plays. I am currently running XMMS
+how to get apt-get to list packages?
+The configuration menus have settings for the audio daemon, and there's a multimedia settings for libgstreamer based applications.  XMMS has it's own configuration.
+cant find anything in apt-get -h
+=== Mez [~mez@82-36-228-130.cable.ubr01.perr.blueyonder.co.uk]  has joined #ubuntu
+=== Do-It-No1 [~Now@217.64.253.201]  has joined #ubuntu
+apt-cache search REGEXP
+=== TongMaster [~TongMaste@home.waugh.id.au]  has joined #ubuntu
+r2d4, Click the 'o' on XMMS, and select "Preferences".  Select the correct "Output Plugin" from there.
+=== pitti_ [~pitti@195.227.105.180]  has joined #ubuntu
+If it's set to ALSA and the sound daemon is running, it might not work, and if it's set to ESD and the sound daemon is NOT running it might not work.
+wow thanks karlheg
+=== zoka [ljflajlf@ds-01-ppp-021.dip.urc.bl.ac.yu]  has joined #ubuntu
+"esound output" for the sound daemon you find in the prefrences "sound".
+karlheg: it is on alsa. let me check if I can find this audio daemon.
+Does it work now?
+Ok.
+i have winxp on hda1, ntfs partition on hda2, root ext3 on hda5 and swap on hda6, and lilo in the mbr, when i boot linux it all works fine but when i boot windows lilo hides hda2 and i cant access the other ntfs partition
+<zoran> how do i make windows see the other ntfs
+=== philc [~reformist@63.99.57.47]  has joined #ubuntu
+=== MorphDK [~morphdk@port237.ds1-od.adsl.cybercity.dk]  has joined #ubuntu
+Hey.. I've got some problems with ALSA.. Please help :(
+Hmmm... well, mine only works when I set XMMS to 'alsa', whether or not the sound daemon is running.
+zoka lilo does not hide the hda2
+=== Heaviette [~Heaviette@ip-114.net-81-220-9.versailles.rev.numericable.fr]  has joined #ubuntu
+it is probably xp not recognizing something
+what kind of partition is xp on?
+ntfs or fat32?
+What if you right-click on the little speaker in the top panel, and select 'Open Volume Control' ?
+xp is on hda1 ntfs
+hmm
+poningru, NTFS.
+lilo did hide hda2
+=== marcin_ant [~marcin@www.e-dev.tele2.pl]  has joined #ubuntu
+karlheg, i tried that.. nothing is muted
+i have no idea why
+well lilo wont show a partition if it doesnt have an os in it
+at boot up
+iirc
+gotta go sleep its too late
+What is shown by the command:  lsmod | grep '^snd'
+why does it hide hda2 when i boot hda1
+Is there a driver for your sound card listed?  You can see what sound card it is with 'lspci'.
+=== BAfH [waja@gremlin.cyconet.org]  has joined #ubuntu
+=== daniel^_ [rlz@bzq-218-134-99.cablep.bezeqint.net]  has joined #ubuntu
+karlheg, yes
+=== daniel^_ is now known as daniel^
+zoka: believe it. lilo only shows bootable partitions. it doesn't hide anything from the operating systems
+=== lionel_ [~lionel@10.21.96-84.rev.gaoland.net]  has joined #ubuntu
+karlheg, it's an intel soundcard, and the snd_intel8x0 driver is loaded..
+It is listed, but still no sound.  Hmmm.  I once had a similar problem.  I did everything you're supposed to and it still would not work.  I used alsamixer, and twiddled all the knobs, and something went 'pop', then it started working.
+=== radix [~radix@ppp111-153.lns1.hba1.internode.on.net]  has left #ubuntu ["Leaving"]
+karlheg, i'm trying to use ALSA only, but there are a lot of 'oss' modules loaded.. is that the way it's supposed to be?
+=== Nobodyreal [~nobodyrea@216.126.224.5]  has joined #ubuntu
+snd_seq_oss, snd_pcm_oss etc..
+=== ghif [~stephen@202.180.98.166]  has joined #ubuntu
+Is the speaker volume turned up?  Are the speakers plugged into the right jack?  Are the speakers powered on?
+=== stian [~stian@75.80-202-211.nextgentel.com]  has joined #ubuntu
+Does anyone have experience getting the gmailfs package to work?
+topyli: it did hide mine
+it's a laptop.. and volume is at 100% and unmuted
+=== oga [~oga@220-253-95-152.QLD.netspace.net.au]  has joined #ubuntu
+Well, I'm stumped.
+me too :D
+MorphDK> can you tell me what your problem is?
+GNULinuxer, no sound at all, but everything seems working
+if i create a file called test.dooc can that be opened with windows word?
+MorphDK> which kernel?
+=== Black-whIsp [~ubuntu@83.93.21.117]  has joined #ubuntu
+hey. :)
+test.doc
+=== ptlo [~senko@darguner.rdlab.carnet.hr]  has joined #ubuntu
+GNULinuxer, ehm.. The latest Ubuntu kernel?
+is it possible to install ubuntu from the live cd?
+zoka: if xp doesn't see an ntfs partition it has nothing to do with your boot loader
+2.6.10-5
+MorphDK> hmm
+=== zeedo [~zeedo@www.reboot-robot.net]  has joined #ubuntu
+=== nrl [~nrl@nrl.student.supporter.pdpc]  has joined #ubuntu
+GNULinuxer, no errors at all, and mplayer finds the card and start playing.. but no sound :(
+Kernel: Linux 2.6.10-5-386
+=== tayfunnn [~doug@85.99.81.146]  has joined #ubuntu
+ThE__OnE: yes
+MorphDK> MorphDK ahh ...
+hey i was wondering if anybody could help me get my ati driver etc installed properly... i've tried just about everything and all i can do now is break my xwindow display.... i've used the forums and wiki and i'm stumped
+=== karlheg [~karlheg@host-250-237.resnet.pdx.edu]  has left #ubuntu ["Leaving"]
+MorphDK> start alsamixer and mute the headphone jack sense and the line in jack sense
+MorphDK> then try
+=== dajar [~dajar@cpc3-leed1-6-0-cust142.leed.cable.ntl.com]  has joined #ubuntu
+GNULinuxer, still nothing :(
+hey all
+first time ubuntu user here! :)
+and loving it
+MorphDK> are you sure nothing is muted?
+Yes, I am sure..
+=== TiffOn [user@218.Red-217-126-197.pooles.rima-tde.net]  has joined #ubuntu
+=== wouterl [~wouter@2.174-136-217.adsl.skynet.be]  has joined #ubuntu
+The only muted are the input devices..
+how can I use t
+i just have one question... i installed apache/mysql/php with the synaptic application.. eveyrthing works apart from when i try and install phpmyadmin it says cannot load mysql extension;
+how can I use update on my old warty?
+MorphDK> are you using the esd audio driver driver for mplayer?
+Nope, ao=alsa in mplayer.conf
+otherwise it won't even start :D
+=== nxv__ [~nxv_@checkpoint-out.gate.uni-erlangen.de]  has joined #ubuntu
+=== Zeinin [~Zeinin@pcp434685pcs.abrcrn01.ga.comcast.net]  has joined #ubuntu
+Moder> change it to esd
+hey
+anyone familiar with persistant crash-to-login bugs?
+=== Vassilis [~ubuntu@adsl99-30dynamic.salonica.acn.gr]  has joined #ubuntu
+wouterl: update?
+Hi
+Hi?
+GNULinuxer, I had some problems with slow sound in ESD, so I got an advice in here to change everything to ALSA... .(
+hey here
+sup
+MorphDK> hmm
+GNULinuxer, so everything is configured for ALSA now
+So let me get into my point. Is there a way to see my ntfs disc using Ubuntu Live cd?
+topyli: well firefox for example (Synaptic package manager apply button doesn't work and I can't mark things as update ...)
+Vassilis: sure, you just have to mount it
+=== Do-It-Now [~Now@cable-62-205-120-65.upc.chello.be]  has joined #ubuntu
+i thought ntfs was unstable
+with linux comp
+it is for writing
+this is really annoying, every 10-20 seconds, ubuntu will reboot to the login screen, and i cannot ctrl-alt-bksp to get out of xwin, it just clicks out and pops back in
+dajar: mount it read-only
+on read no pbls
+ah
+hmmph
+@ topyli ....and that happens as... ?
+=== johnnybezak [~johnnybez@203-217-44-143.dyn.iinet.net.au]  has joined #ubuntu
+sorry
+teamspeak still doesnt work!
+=== ealden [~ealden@219.90.91.253]  has joined #ubuntu
+so right now, i am using windows because ubuntu is really broken, anyone ever fix this?
+Zeinin: fix what
+..
+constant and persistant crashes every 15 seconds
+Vassilis: something like "sudo mount -t ntfs -o ro,umask=0 /dev/hdXX /mnt"
+morphDK> tru muteing everyting but master pcm and external amp, then turn master and pcm ALL the way up an then down again. that worcked for me.
+really?
+it dumps me back to the login
+i only get fatal errors when i boot up
+but it still works
+this is really annoying, every 10-20 seconds, ubuntu will reboot to the login screen, and i cannot ctrl-alt-bksp to get out of xwin, it just clicks out and pops back in
+the first time after install
+stian, i guess it's worth a try
+zeinin..
+thanks ekco
+Zeinin the server X then probably
+what are you trying to do?
+is the definition of the absolute linux newbie....
+i am trying to use my computer
+=== araw1- is away (BRB a sec...)
+=== nxv__ [~nxv_@checkpoint-out.gate.uni-erlangen.de]  has joined #ubuntu
+yes ofcourse.. but in what way is it rebooting?
+Hi! Any sound gurus here? Still having problems.
+the x-server seems to crash and restart
+i end up back at the ubuntu login screen
+whats does
+'dmesg' say *
+what?
+=== zever|exam is now known as zever
+hmm?
+i dont have the actual time to check anything
+=== grunde [~grunde@217.77.36.52]  has joined #ubuntu
+hmm is w32 codecs removed from the reps ?
+like, i cannot even get to a terminal
+control + alt + F1
+stian, didn't work
+login as root
+=== mikl [~mikkel@mikl.active.supporter.pdpc]  has joined #ubuntu
+k
+morphDK> I think it has someting to do whit alsa seeing the volum control as 0 or 0 before you turn i all the way up once
+is there anybody in here that can help me get my fglrx drivers to work.... i'm totallly stumped,
+type root, and pw, then type dmesg
+then what?
+stian, but now i've turned it all the way up, then down, then up and finally down again..
+morphDK> 1 or 0 that is
+=== cantrel29 [~chatzilla@81-178-20-101.dsl.pipex.com]  has joined #ubuntu
+"scrollkeeper" seems to be bitching alot when i can get a terminal screen
+=== alonso [~alonso@dns2.mahidol.ac.th]  has joined #ubuntu
+=== beavis [~beavis@203.177.168.113]  has joined #ubuntu
+need help ... with the network
+pls
+anybody willing ?
+Has anyone managed to get gmailfs working on Hoary?
+bob2: what was to command to kick off xorg config again?
+Zeinin, dmesg should give you an output on what happened..
+gmailfs?
+right
+oh, another question
+well.. going for a reboot.. brb
+=== MorphDK [~morphdk@port237.ds1-od.adsl.cybercity.dk]  has left #ubuntu ["Leaving"]
+guys/gals, .. i tried using the network browser but i noticed when i tried to open a file, ..
+it has an error
+in the five minutes i had in ubuntu before this bullshit started, i tried to run synaptic and it failed
+=== scorpix [~o@as6-57.qualitynet.net]  has joined #ubuntu
+Tereoedni: It's for mounting a gmail account to your filesystem.
+something about not having exclusive control over something
+:)
+ok guys
+what would be the php4-mysql package for unbuntu
+never tried that ....Yet
+Zeinin, you must use root to do this
+cantrel29: sueo dpkg-reconfigure xserver-xorg
+well, sudo
+dajar: php4-mysql
+i had an SMB error when i tried to open a doc file on the network browser .. anybody help ?
+its not working
+=== CDK [~ckarst@216-161-81-195.ptld.qwest.net]  has joined #ubuntu
+E: Couldn't find package php4-mysql
+=== s00d [~s00d@host81-153-21-185.range81-153.btcentralplus.com]  has joined #ubuntu
+when i apt get
+hello
+dajar: yes, it's in the universe repository
+sorry how would i get to that
+first time unbuntu user here! :D
+bob2: thankyou again.
+this is the first time i have ever used irc its pretty cool
+do you know how to use a text editor?
+yes
+!universe
+topyli: I don't know
+hm
+=== Mez [~mez@82-36-228-130.cable.ubr01.perr.blueyonder.co.uk]  has joined #ubuntu
+yes
+dajar: edit /etc/apt/sources.list, read the bit about universe and uncomment the lines
+this might be a stupid question but how do i get this chat to be on the desktop?
+then run 'sudo apt-get update', then try installing it again
+like a wallpaper
+you can't
+not easily, anyway
+how do i install wine?
+i added the repos etc, but still cant be found
+ekCo: Which repos?
+=== spacey [~spacey@145.33.144.151]  has joined #ubuntu
+ekCo: paste your /etc/ap/sour to #flood
+er, you know what file I mean
+Hi. I'm having a little trouble installing IPTables::IPv4. I'm trying to install the module so I can use the linblock.pl script from www.dessent.net. I've manually downloaded it and done 'perl Makefile.pl' and 'make install', and all seems to have gone swimmingly. But after when trying to run linblock.pl I still get the following error message: 'Could not connect to iptables interface: iptables who? (do you need to insmod?)' Is
+ there something I've missed here?
+=== anatole [~anatole@a84-0-160-239.adsl-pool.axelero.hu]  has joined #ubuntu
+ok
+i had an SMB error when i tried to open a doc file on the network browser .. anybody help ?
+hi all!!
+did you try it with the ip
+i need some suggestion
+=== zeedo [~zeedo@www.reboot-robot.net]  has joined #ubuntu
+sometimes the host names can be off at least on my network
+ip always works tho
+=== tictoc [~tictoc@pool-70-17-131-77.wma.east.verizon.net]  has joined #ubuntu
+bob2 check flood
+i can't open a doc file when i access it on a shared folder on a network server .. how come ???
+=== ChinaCatJones [~chris@pool-71-111-176-217.ptldor.dsl-w.verizon.net]  has joined #ubuntu
+i want to change refresh rate, because it just only 60 Hz, it bad for me
+beavis: does it work if you copy it to the desktop first?
+ekCo: and paste the error you get from 'sudo apt-get install wine' to #flood, too
+yes .. it works
+=== jtorgers [~jtorgers@S01060004e2d4dc55.wp.shawcable.net]  has joined #ubuntu
+bob2 : yes it works .. tried it ....
+can in run ubuntu i386 on an Athlon 64 bit processor?
+bob2 : but if i do that , .. i'll have to copy / paste it again on the server.
+mlambie, yes.
+because i've finished the install, and it says "error cannot load operating system"
+bob2: is there anything easier like the one windows does ?
+which seems like a grub error
+=== microhaxo [~microhaxo@c-24-118-7-234.hsd1.mn.comcast.net]  has joined #ubuntu
+err
+which version?
+beavis: sure, mount it prerly
+hoary
+bullshit, Viewing my NTFS Drives FCKED windows
+bob2, sent
+=== xabbu| [~Xabbu@h43n2fls34o945.telia.com]  has joined #ubuntu
+microhaxo: ctop it
+bob2: you mean i have to do it manually ?? no front-end based ?
+ctop it?
+"stop"
+stop
+what
+ranting
+im pissed, if you had to pay 120 for a new windows
+if you have a problem, explain what you did
+lol
+it cant be fixed
+right
+=== incubii [~incubii@61.68.51.128]  has joined #ubuntu
+because if yo ucan't fix it, it must be impossible
+now im stuck with  ubuntu
+bob2
+bob2, sent, check when helped microhaxo
+im a very experienced windows user
+i know when it cant be fixed
+I'm sure you are
+=== Higuita_ [~toni@poirot.yok.utu.fi]  has joined #ubuntu
+i need to format
+that I'm less convinced of
+ekCo, i am booting off a sata disk, and it worked with the 64_x86 install earlier today
+bha
+ekCo: hrm...you're not on amd64,, are you?
+=== ntoll [~ntoll@62.232.39.9]  has joined #ubuntu
+whats the command to nat all trafic from tun1 "tunnel interface" to eth1
+somehow viewing my ntfs drives FUBARD windows, its missing files, it wont boot, ETC
+morning guys.
+bad morning
+problem is, some software i need only comes packaged as rpms, and they only work with alien on 32 bit
+=== lukus001 [~lukus001@82-32-107-175.cable.ubr02.hawk.blueyonder.co.uk]  has joined #ubuntu
+microhaxo: reading an ntfs partition does no harm to it
+microhaxo: "viewing"?
+yes it does
+microhaxo: what exactly did you do?
+you wrote to it
+you cant
+ecKo: May sound like a stupid question...  you've run "apt-get update" right?
+write to ntfs
+microhaxo: see, the reason we doubt you is because no one else has ever seen this
+bob2, im on 64bit.
+you know
+How can i install w32codec on chroot
+What has happend?
+ekCo: wine doesn't work on an amd64 machine
+yes Nobodyreal
+i have a story like this with red hat.. HERE is how it went:
+:|
+ekCo: er,on the amd64 ubuntu port
+microhaxo: sure you can write to it, it's just dangerous
+it has the howto on winehq for ubuntu lol
+microhaxo: we don't care about some other story, tell us what you did this time
+:|
+wasted all that typing
+i didnt do anything
+i was in gnome
+playin mp3's
+i got cedega running on 64bit without a 32bit chroot :P
+ekCo: it says you can install it on the amd64 ubuntu port?
+microhaxo: show us your /etc/fstab, in #flood
+and i wanted to play a little CounterStrike source, so i booted into windows, and it was fine
+k
+are there any packages for beagle on hoary? or is it easy to get working from beagle source?
+=== Ubuntu [~Ubuntu@d83-180-7-188.cust.tele2.nl]  has joined #ubuntu
+Does anyone know how i can install the w32codec ?
+catfox: doesn't modern beagle require mono 1.1?
+bob2, not exactly
+lol
+hi
+lukus001: wiki.ubuntu.com/RestrictedFormats
+you want the list of files in directory?
+So...  Nobody has ideas on how I could get gmailfs working?
+microhaxo: no, I'd like to see your /etc/fstab file
+bob2: when i do apt-get it says it has no install candiadte
+it wont open
+gedit
+hrm
+lukus001: you need to read that wiki page
+okay
+bob2: you mean i have to do it manually ?? no front-end based ?
+#flood
+catfox: http://beaglewiki.org/index.php/UbuntuInstall . make sure to read it all first
+beavis: basically, yes
+bob2, i gtg.
+topyli, thanks
+=== _root_ [~Unknown@dsl-Chn-static-151.41.101.203.touchtelindia.net]  has joined #ubuntu
+=== bernd_ [~bernd@arcturus.physik.uni-konstanz.de]  has joined #ubuntu
+thanks for help anyways
+ekCo: np, sorry for not being of more use
+tata
+bob2 check it
+microhaxo: so, now you have to stop whinging, forever
+microhaxo: you're using captive ntfs
+when it breaks, you get to keep all the pieces
+what?
+heh, actually
+i dont do anything with my windows drives
+i will be back later
+i just boot to them>
+19:56:42      microhaxo |  /dev/hdb1 /mnt/captive-new_volume captive-ntfs defaults,noauto 0 0
+i have never Written to them
+to fix teamspeak, maybe you might have an idea?
+yea i installed that yesturday
+microhaxo: whatever, you went out of your way to install and configure captive ntfs
+it was broke YESTURDAY
+i wanted to replace a dll
+that ate your disk, that's entirely your own fault
+in linux
+bob2?
+yes, writing to ntfs is not safe from linux
+IT was FUCKING BROKEN B4 that!
+and will corrupt your disk
+omg
+forget it
+=== BeTa_ is now known as Beta
+=== Beta is now known as BeTa
+windows = broken for 3 days now
+ekCo: never used it, sorry
+microhaxo: ok!
+captive ntfs installed = yesturday
+=== oga [~oga@220-253-95-152.QLD.netspace.net.au]  has joined #ubuntu
+k
+Bob2 how do i remove captive ntfs
+?
+just delete the lines?
+that would be a start
+err
+bob2
+you installed it from source, so I ddon't know where you put the rest of the bits
+Why not just put in the winXP disc and make repair the system?
+captiventfs is on my EMPTY NTFS hd
+windows is on hda1
+microhaxo: ok!
+oga: please keep things in the channel
+bob2: that link isn't of any use... it doesnt help me get the codecs ?:S
+oga: all I can suggest is reading the howto again and making sure you followed all the steps
+thanks bob2
+oga: and that the drivers support your card
+God dammit, now i need to go buy a new windowsxp cd
+:|
+why on earth would you need to do that?
+mine is Scratched to hell
+if you installed windows, presumably you own a windows disk
+its Scratched
+i havent had to reinstall windows for EVER
+it works FLAWLESSLY
+buy pirated .... lots here
+just by a cd de-scratcher
+=== n3C [~n3C@klik27.klik.bydgoszcz.pl]  has joined #ubuntu
+pirated doesnt give me updates
+yes it does .. it does for us here
+annnnnyway
+heheheheh
+awn your cd--key isn't scratched right..?
+hi i will take over my xp computer with my ubuntu pc how? i tright it with terminal server client but err
+sorrry am not so techie, .. can't help you people who need help
+i need help too
+i dont have my cd key anymore, if i can boot into windows and retreive it
+:P
+=== shock [~shockwave@dsl-082-082-155-216.arcor-ip.net]  has joined #ubuntu
+hehe there is a cd key gen for xp
+Ubuntu, Have you activated the Terminal server on your windows computer?
+So does anyone know how i can get w32codecs installed? i just get file missing install candidate
+=== BraD [~simple@78f14c649ad397c1.session.tor]  has joined #ubuntu
+=== ztonzy [~ztonzy@ztonzy.artist.blender]  has joined #ubuntu
+lukus001: Is your repositories updated?
+=== bfsPaul [~paul@host81-138-210-156.in-addr.btopenworld.com]  has joined #ubuntu
+yes ssh i believe secure security client
+xabbu|: yes they are
+Okey.
+lukus001: just get the tarball from mplayer.hu
+=== Swynndla [~Swynndla@210-54-11-182.ipsm.net.nz]  has joined #ubuntu
+I need a better ntfs reader than the default (better error-handling), is there any such thing?
+is installing .deb files individually dangerous? I've heard it can screw the system over if they fail!
+microhaxo: Well, thats your fault. Why on earth would you store your cd-key on your harddrive?
+nubbe: no
+if i install form source how do i uninstall
+err
+cus i never had to use it
+i didnt store it
+i can get a program to read it
+=== DagaZ [~rolle@h34n1fls35o858.telia.com]  has joined #ubuntu
+Hylas: not if they're from ubuntu, but in practice you won't need to do that
+like i said there is a way to change it and update it
+off of windows
+bob2, that's bad :(
+with a keygen
+for me
+nubbe: why?
+=== Nikopol [~mambo@i-195-137-15-67.freedom2surf.net]  has joined #ubuntu
+anyway, all this windows stuff is off topic
+take it to #ubuntu-offtopic
+yes i had a simple question how do i uninstall something i installed from source
+bob2: that site isnt in english :s lol
+ubuntu, You need the have a ssh server installed on windows if you are to use ssh.
+bah
+because I've got xmms and mplayer here as rpm's and I was going to convert them to deb with alien then install them. I have a slow internet connection so i try to stay away from downloading
+bob2, I could read some files with xp, but not with ubuntu, that I need...
+If linux could actually run a damn game, CEDEGA is complete BS, wont run Counterstrike source whatso ever..
+CDK: you can't, in general.  "make uninstall" might work if yo ustill have the original source tree still
+microhaxo: so, if you're a paying customer, go to their site and vote for it
+i c
+Hylas: I'd strongly recommend not doing that
+ok
+it is "Supported"
+bob2, and I know th aprtition is flaky, so I guess win handles the errors better
+nubbe> what  files?
+CDK: in future, checkinstall and stow are useful for that
+microhaxo: then file a bug with them if it doesn't work
+but just my luck it wont run on my sys
+xabbul: ok i use secure shell client
+okey
+microhaxo: ranting here isn't going to help it work, sorry
+nothing will help
+=== ThE__OnE [~mojojojo@ool-4577fc07.dyn.optonline.net]  has joined #ubuntu
+GNULinuxer, why?
+im pissed
+microhaxo: then be pissed somewhere else
+CDK: plese keep it on-channel
+nubbe> you said you can't view them in ubuntu ... that's why
+CDK: they do different things, but checkinstall is probably simpler
+sorry m8 i dont know how to talk to just you
+GNULinuxer, No, I said I can't read them
+GNULinuxer, As in ubuntu can't get the data from the ntfs part
+ARG, i cannot connect to this FTP, it needs SECURE connection but when i use SSH2 it times out?!?!
+nubbe> aha
+using Gftp
+Anyone knows of any hardware checking software for linux. That sees if something is broken like agp-ports and stuff.
+=== kafeine [~kori@212.39.73.142]  has joined #ubuntu
+microhaxo: ssh has nothing to do with ftp over ssl
+=== opteron [~opteron@80-218-68-148.dclient.hispeed.ch]  has joined #ubuntu
+xabbu|: I'm pretty sure it's not possible to detect that from software
+then how do i connect securely?
+Okey...
+=== Quartus [Quartus@c-d080e255.54-2-64736c10.cust.bredbandsbolaget.se]  has joined #ubuntu
+gFTP
+nubbe> NTFS read support is there in the ubuntu kernel
+=== teroedni_ [~teroedni@ti411310a080-3228.bb.online.no]  has joined #ubuntu
+GNULinuxer, yes, but that doesn't cut it for me, that's why I asked if there was sometething better, more elaborate out there
+nubbe> can you succesfully mount the partition?
+=== nir [~Element@line134-128.adsl.actcom.co.il]  has joined #ubuntu
+bob2: how do i connect securely to this ftp?
+=== teroedni__ [~teroedni@ti411310a080-3228.bb.online.no]  has joined #ubuntu
+microhaxo: I don't know what "ftp" you're talking about
+i said
+I hear gftp can do ftp/ssl, tho
+its my prif ftp
+anyway
+"prif" is not a word
+gFTP
+itsa  damn TOPSITE Mk
+so
+I have no idea what a "TOPSITE Mk" is, either
+you dont need to know
+GNULinuxer, I can mount and read most of it, just a few files that has errors, and did under xp too, but I just didn't realise that before, since I could read them with xp (that is no more)
+QUOTE WHOIS %s %s
+i need to connect to a server with SECURE Access.
+nubbe> it's corrupt now
+microhaxo: throwing around buzzwords doesn't help
+GNULinuxer, NOOO?? really??   ;)
+microhaxo: presumably it speaks ftp/ssl
+microhaxo: if that doesn't work, talk to whoever runs it
+nubbe> the xp failure must have happended after you tried to read them from ubuntu, right?
+yea sure, but how do i select this option in gFTP?
+there is just drop down boxes
+nubbe> just apt-get install ntfsprogs
+ftp , http ,local ,ssh2,fsp
+[12:15] <opteron>
+GNULinuxer, I'll look at them
+nubbe> and use ntfsfix from there and try to fix it
+530 USE SECURE CONNECTION
+GNULinuxer, that I don't think I'll do
+=== GNULinuxer *shrugs*
+=== philc [~reformist@63.99.57.47]  has joined #ubuntu
+No takers? :-(
+I'd use a less obscure firewall system, I guess
+like?
+=== tapia [~tapia@163.Red-80-25-218.pooles.rima-tde.net]  has joined #ubuntu
+hi
+I have a problem with my ubuntu
+I have it installed Breezy in my ibook G4
+=== floo [~floo@host-84-9-78-134.bulldogdsl.com]  has joined #ubuntu
+is there an easy to use FTP app?
+=== Vassilis [~ubuntu@adsl99-30dynamic.salonica.acn.gr]  has joined #ubuntu
+gftp is pretty easy to use
+and some dist-upgrade has broken my X keyboard layout
+does anyone know anyting about name resolution?
+lol thats what im using
+tapia: you're using hoary, right?
+and it wont connect meh
+bob2: no, breezy
+it worked rigth till today
+whats the diff between breezy and hoary?
+microhaxo: lftp does it
+breezy is the development branch
+i had it configured for spanish layour
+layout
+which is not recommended for people who can't fix their own systems
+but now it is english
+I guess X is broken again; you'll have to wait for daniel to fix it
+try looking ni bugzilla, there's probably a workaround already
+and gnome-keyboard-properties crashes if i try to change the layout
+=== sly [~sly@host81-153-79-232.range81-153.btcentralplus.com]  has joined #ubuntu
+bob2
+says i already got it
+is it gui or terminal?
+cool
+terminal
+aww
+=== Dalkus [~David@81-86-159-34.dsl.pipex.com]  has joined #ubuntu
+I thought all leet kiddies knew how to use command line ftp clients
+im a windows user dammit
+its only day 10 on linux
+you use a gui client on windows? heh
+wtf
+microhaxo, you'll get used to it in no time :)
+it's easy to use
+they dont make a "Terminal" FTP client for windows
+hah
+microhaxo, theres plenty of gui ftp clients for linux too if you like
+microhaxo: er, it ships with one
+microhaxo, they do
+microhaxo: type ftp in a command window sometime
+microhaxo: apt-get install gftp-gtk
+k
+thanks
+=== fabrice [~desrefa@freedom.rd.francetelecom.com]  has joined #ubuntu
+i have gftp
+lol
+i need a diff one
+it wont let me connect securely
+=== derJunior [~derJunior@p549FBDF9.dip.t-dialin.net]  has joined #ubuntu
+=== odie5533 [~odie5533@c-67-175-208-140.hsd1.il.comcast.net]  has joined #ubuntu
+Using Telnet to a website, what command downloads the page?
+can anyone help me with a problem?  I keep getting "temporary failure in name resolution"  I can ping ip addrsses and the router but no domains.  I've checked resolv.conf and everything's ok there similarly with /etc/hosts... aaarrgghh!!! any ideas?
+odie5533: GET
+floo: can you ping the nameserves in /etc/resov.conf?
+GET what?
+just "GET"
+thats the command
+yes no probs there
+GET $path HTTP/1.1
+or just ues the GET command from libwww-perl
+or wget
+or ...
+you need HOST too if you specify HTTP/1.1
+hmm, right
+the only reason why i dont like linux is: i spent lots of money on my nifty RADEON X800XT PE and linux cant do anything with it.
+ok I'll give that a go, thanks
+that's ATI's fault, not linux's
+microhaxo: ebay
+bah
+no i am a GAMER
+sell it, and buy a real card, an nvidia
+me too
+BAH
+nvidia sucks ass
+:O
+i can own any of you in a 3dmark 05 benchmark
+yeah my fx5200 works just fine in linux ;)
+microhaxo: try to actually be polite
+=== odie5533 chokes
+and no one cares how big your video card is
+xabul: ill tright it but connection refused he says
+bah
+mines like bigger than my box
+bob2, talk for yoruself
+it wont even fit in
+so i win
+lol
+no
+mine has 16 pipelines
+anyone to spare a minute for a newbie?
+hah
+mine has its own power supply, and two led fans, i win
+no
+and my radeon works fine in ubuntu
+mine works
+Vassilis, dont ask to ask, just ask :)
+but WHAT Games can i play?!
+is there a way to pm just not fill the window?
+who wants to play tux racer, integrated graphics card can run that 50FPS +
+yea

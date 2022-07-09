@@ -1,0 +1,521 @@
+File Name|Id|Sentence
+2004-11-15_03.ascii.txt|991|=== carger314 [~carger314@ip68-228-44-118.tc.ph.cox.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|992|=== thoreauputic [~petros@wolax7-209.dialup.optusnet.com.au]  has joined #ubuntu
+2004-11-15_03.ascii.txt|993|=== zara [~zara@69.138.227.132]  has joined #ubuntu
+2004-11-15_03.ascii.txt|994|room dead?
+2004-11-15_03.ascii.txt|995|mirak_: yepp
+2004-11-15_03.ascii.txt|1187|lol
+2004-11-15_03.ascii.txt|997|=== compdude [kads@ti211310a081-2220.bb.online.no]  has left #ubuntu []
+2004-11-15_03.ascii.txt|998|=== GOwin [~Miranda@210.213.142.27]  has left #ubuntu []
+2004-11-15_03.ascii.txt|1146|=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1000|=== strestout1__ is now known as strestout1
+2004-11-15_03.ascii.txt|1001|night all :)
+2004-11-15_03.ascii.txt|1002|=== yohannes [~yohannes@adsl-67-112-218-21.dsl.sntc01.pacbell.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1003|can anyone recommend any app to create/open *.rar file?
+2004-11-15_03.ascii.txt|1004|yohannes, why not WinRAR?
+2004-11-15_03.ascii.txt|1005|http://www.rarlab.com/
+2004-11-15_03.ascii.txt|1006|i am trying to weight my option. any other apps?
+2004-11-15_03.ascii.txt|1007|Just download RAR 3.41 for Linux
+2004-11-15_03.ascii.txt|1008|Oh
+2004-11-15_03.ascii.txt|1009|I see
+2004-11-15_03.ascii.txt|1010|Only one I know of, sorry =(
+2004-11-15_03.ascii.txt|1011|btw, how can i install that darn thing? :)
+2004-11-15_03.ascii.txt|1012|i downloaded winrar, does not have any instruction to install
+2004-11-15_03.ascii.txt|1013|file-roller
+2004-11-15_03.ascii.txt|1014|i suspect i need to do something with the makefile included
+2004-11-15_03.ascii.txt|1015|=== mubix [~mubix@ca-29palms-cmts2d-189.losaca.adelphia.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1016|=== ud [~ud@25.b.001.ham.iprimus.net.au]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1072|=== blocke [~blocke@pool-70-18-134-61.pghk.east.verizon.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1018|=== lev is now known as lev-away
+2004-11-15_03.ascii.txt|1019|hi... is anyone elses laptop spinning down the hard drive after like one second of inactivity since updating in the last few days?  its driving me nuts and I'm afraid of damage to the hard drive :(
+2004-11-15_03.ascii.txt|1020|=== miked593 [~miked593@ip68-6-239-231.sd.sd.cox.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1021|=== LKSEONG_ is now known as KentutMerah
+2004-11-15_03.ascii.txt|1022|blocke: 5 seconds. that's the minimum you can have. hdparm -S 1 that is :-).
+2004-11-15_03.ascii.txt|1143|=== GnuHippy [~jason@blk-222-217-193.eastlink.ca]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1024|any idea what is setting it by default in ubuntu?
+2004-11-15_03.ascii.txt|1025|blocke: /etc/acpi/power.sh
+2004-11-15_03.ascii.txt|1026|it didn't used to be so short on this laptop until I upgraded to hoary... can't be good for the hard drive
+2004-11-15_03.ascii.txt|1027|the gimp ScriptFU filters are broken in hoary
+2004-11-15_03.ascii.txt|1028|blocke: it makes battery time :-P
+2004-11-15_03.ascii.txt|1029|blocke: in warty default is 12.
+2004-11-15_03.ascii.txt|1030|yeah I see that, strange
+2004-11-15_03.ascii.txt|1031|its not respecting it
+2004-11-15_03.ascii.txt|1209|=== natea [~natea@h000f66a887c6.ne.client2.attbi.com]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1033|its literally spinning down after a second of inactivity
+2004-11-15_03.ascii.txt|1034|blocke: sudo hdparm -i /dev/hda
+2004-11-15_03.ascii.txt|1035|=== Hydroxide [user@adsl-98-2.bway.net]  has left #ubuntu []
+2004-11-15_03.ascii.txt|1036|http://www.pastebin.com/116669
+2004-11-15_03.ascii.txt|1037|wow it is scary how much work they have done on hoary already and how fast updates and fixes are made
+2004-11-15_03.ascii.txt|1038|=== holycow [~yada@S0106002078ccd651.vf.shawcable.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1039|GnuHippy: that's largely merging with sid.
+2004-11-15_03.ascii.txt|1040|=== poin_t [point@203.130.197.108]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1041|Do they have 1000 Keebler elves working around the clock?
+2004-11-15_03.ascii.txt|1146|=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1043|ic jdub
+2004-11-15_03.ascii.txt|1044|was Sarge released yet?
+2004-11-15_03.ascii.txt|1045|hey jdub, how goes it
+2004-11-15_03.ascii.txt|1046|sarge wont be released until i have grandkids
+2004-11-15_03.ascii.txt|1047|I'll take that as a no
+2004-11-15_03.ascii.txt|1048|gah... stop spinning down!
+2004-11-15_03.ascii.txt|1049|=== ajmitch checks to see if his packages are in hoary/universe
+2004-11-15_03.ascii.txt|1050|blocke: hmm, that didn't say spindown time :-P. well, sudo hdparm -S 12 /dev/hda does what you want :-).
+2004-11-15_03.ascii.txt|1051|I did that several minutes ago
+2004-11-15_03.ascii.txt|1052|In universe there is fluxbox_0.1.14-4_i386.deb and fluxbox_0.9.9-1_i386.deb but i can only manage to apt 0.1.14-4. How can I get the 0.9.9-1 release?
+2004-11-15_03.ascii.txt|1053|=== blocke reboots in the vein hope that its just a fluke...
+2004-11-15_03.ascii.txt|1054|great, I have about 10 packages in universe for hoary :)
+2004-11-15_03.ascii.txt|1055|ud, dpkg ?
+2004-11-15_03.ascii.txt|1056|umm.. I use apt-get. But should I try dpkg?
+2004-11-15_03.ascii.txt|1057|ud: 0.9.9 is most likely the hoary version, not the warty version
+2004-11-15_03.ascii.txt|1058|ud: dpkg won't help you
+2004-11-15_03.ascii.txt|1059|(well, it could, but it's not advisable)
+2004-11-15_03.ascii.txt|1060|ahh but its in the the same repo?
+2004-11-15_03.ascii.txt|1061|=== nomasteryoda is away: IM me @ nomasteryoda on AIM / YIM
+2004-11-15_03.ascii.txt|1062|it's in the same pool
+2004-11-15_03.ascii.txt|1063|all the warty and hoary packages are in the same pool
+2004-11-15_03.ascii.txt|1064|ahh ok
+2004-11-15_03.ascii.txt|1065|but they're for different releases
+2004-11-15_03.ascii.txt|1066|I wondered if that was the case
+2004-11-15_03.ascii.txt|1067|Because it wouldnt show the newer release with apt-cache search
+2004-11-15_03.ascii.txt|1068|Is there a way I can use the newer release?
+2004-11-15_03.ascii.txt|1069|=== logic [~me@222-152-218-210.jetstream.xtra.co.nz]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1070|ud: hoary is the development branch
+2004-11-15_03.ascii.txt|1071|ud: unless you're very familiar with debian, i wouldn't recommend it
+2004-11-15_03.ascii.txt|1072|=== blocke [~blocke@pool-70-18-134-61.pghk.east.verizon.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1073|ud: there is, but as jdub just said, it's not advisible :-).
+2004-11-15_03.ascii.txt|1074|=== defendguin [~supertux@adsl-6-68-108.msy.bellsouth.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1075|ok thanks for your help, ill just have to wait :)
+2004-11-15_03.ascii.txt|1076|=== CPayan [~chatzilla@user-1120jfl.dsl.mindspring.com]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1077|=== hazmat [~hazmat@j71055.upc-j.chello.nl]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1078|brettcar: sad
+2004-11-15_03.ascii.txt|1079|=== Tex___ [tex@beer.tclug.org]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1080|hmm I had to hdparm -B 255 to stop the spinning down, oh well, at least I have a workaround
+2004-11-15_03.ascii.txt|1155|=== Striss [~Strain@blk-222-170-205.eastlink.ca]  has joined #Ubuntu
+2004-11-15_03.ascii.txt|1082|blocke: hehe
+2004-11-15_03.ascii.txt|1083|"hey guys, I just installed Fluxbox, and I""m running it...all the fonts in my gnome apps look kinda gross now"
+2004-11-15_03.ascii.txt|1084|they don't look like they did in gnome
+2004-11-15_03.ascii.txt|1085|fluxbox is in ubuntu?
+2004-11-15_03.ascii.txt|1086|dopey: in universe, of course.
+2004-11-15_03.ascii.txt|1087|that makes more sense
+2004-11-15_03.ascii.txt|1088|does anyone here have k3b experience? i can record things with cdrecord but k3b won't let me (did k3bsetup and all and it seems happy. but k3b says my device isn't a cd writer)
+2004-11-15_03.ascii.txt|1089|i thought universe was unsupported though
+2004-11-15_03.ascii.txt|1090|it is
+2004-11-15_03.ascii.txt|1091|"djtansey: k3b won't work with kernel 2.6.8|2.6.8.1"
+2004-11-15_03.ascii.txt|1092|=== Dethread [~Dethread@24-205-231-52.slo-cres.charterpipeline.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1093|Nafallo: so go back to 2.6.7?
+2004-11-15_03.ascii.txt|1094|djtansey: yepp, or upgrade to 2.6.9
+2004-11-15_03.ascii.txt|1095|hmm progression or regression
+2004-11-15_03.ascii.txt|1096|Nafallo: thanks. i'll see if ubuntu has 2.6.9 packaged
+2004-11-15_03.ascii.txt|1097|it will work with the ubuntu kernel
+2004-11-15_03.ascii.txt|1098|jdub: k3b will?
+2004-11-15_03.ascii.txt|1099|no, there's no 2.6.9 in warty or hoary
+2004-11-15_03.ascii.txt|1179|yes
+2004-11-15_03.ascii.txt|1101|there are plenty of people using it
+2004-11-15_03.ascii.txt|1102|jdub: never worked with ANY 2.6 for me :-P
+2004-11-15_03.ascii.txt|1103|jdub: then any guess as to what the problem is?
+2004-11-15_03.ascii.txt|1104|jdub: that's with both ubuntu and debian kernels.
+2004-11-15_03.ascii.txt|1105|dunno if there's a FAQ or something on the website, but it would make sense to check
+2004-11-15_03.ascii.txt|1106|jdub: i did. nothing i could find that was related
+2004-11-15_03.ascii.txt|1107|opss, typo! 2.6.8* ;-)
+2004-11-15_03.ascii.txt|1108|jdub: other than some k3bsetup .ICEauthority issues
+2004-11-15_03.ascii.txt|1109|Nafallo: but it works with 2.6.7 for you?
+2004-11-15_03.ascii.txt|1110|"jdub: k3b and 2.6.8|2.6.8.1 on both my computers with burners fail."
+2004-11-15_03.ascii.txt|1111|djtansey: yes.
+2004-11-15_03.ascii.txt|1112|djtansey: and it should be fixed in 2.6.9 also :-)
+2004-11-15_03.ascii.txt|1113|Nafallo: the ubuntu kernels do not have those bugs.
+2004-11-15_03.ascii.txt|1114|Nafallo: thanks.
+2004-11-15_03.ascii.txt|1115|plenty of other people are using k3b with ubuntu
+2004-11-15_03.ascii.txt|1116|jdub: how come when I TRIED with ubuntu k3b couldn't see my burner?
+2004-11-15_03.ascii.txt|1117|jdub: same thing with my girlfriend.
+2004-11-15_03.ascii.txt|1118|i don't know your particular circumstances
+2004-11-15_03.ascii.txt|1119|i can only relate what i know
+2004-11-15_03.ascii.txt|1120|it just doesn't work :-)
+2004-11-15_03.ascii.txt|1121|jdub: same here.
+2004-11-15_03.ascii.txt|1122|that may be true in your case
+2004-11-15_03.ascii.txt|1123|but it is not the case for many other users
+2004-11-15_03.ascii.txt|1124|jdub: maybe it's just drive specific?
+2004-11-15_03.ascii.txt|1125|i don't know
+2004-11-15_03.ascii.txt|1126|jdub: but then, I got both a samsung and a toshiba ;-).
+2004-11-15_03.ascii.txt|1127|"=== logic is now known as logic|away"
+2004-11-15_03.ascii.txt|1128|it might be that I'm running my cd-rws as ide-cd :-)
+2004-11-15_03.ascii.txt|1129|Nafallo: but i can use cdrecord dev=/dev/hdc without problem. you'd think k3b would be equally capable
+2004-11-15_03.ascii.txt|1130|djtansey: yepp, I've given up on the subject anyway :-P. ubuntu showed me the way nautilus does it :-P.
+2004-11-15_03.ascii.txt|1131|Hi, I have a rather long question, so I have posted it here on the ubuntu forums. If anyone here has any answers to it, I would very much appreciate the help!
+2004-11-15_03.ascii.txt|1132|http://www.ubuntuforums.org/showthread.php?p=11009#post11009
+2004-11-15_03.ascii.txt|1133|Nafallo: usually that's what i do. unfortunately i am burning audio CDs for a roadtrip :)
+2004-11-15_03.ascii.txt|1134|djtansey: running k3b with sudo?
+2004-11-15_03.ascii.txt|1135|not that it should matter with the patched kernel
+2004-11-15_03.ascii.txt|1136|=== Elyran [~mirspcm@lns-th2-4f-81-56-180-71.adsl.proxad.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1137|ajmitch: no. but i gave k3b my root password so those apps have root permissions
+2004-11-15_03.ascii.txt|1138|phill: my friend installed that on his lappy yesterday. he just had to apt-get and s/ati/fglrx/ :-)
+2004-11-15_03.ascii.txt|1139|phill: and then restart x and gdm ofcourse :-)
+2004-11-15_03.ascii.txt|1140|djtansey: k3b doesn't have root permissions.
+2004-11-15_03.ascii.txt|1141|djtansey: cdrecord and cdrdao have :-).
+2004-11-15_03.ascii.txt|1142|hi, ok, how do i restard x/gdm?
+2004-11-15_03.ascii.txt|1143|=== GnuHippy [~jason@blk-222-217-193.eastlink.ca]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1144|"Nafallo: that's why i meants by ""those apps."" would giving k3b root help? (not that it matters now. i just finished my last CD using cdrecord)"
+2004-11-15_03.ascii.txt|1145|phill: logout from X, when you're at the login screen, press CTRL+F1, login and typ sudo /etc/init.d/gdm restart
+2004-11-15_03.ascii.txt|1146|=== draconian [~draconian@ip68-7-178-227.sd.sd.cox.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1147|ctrl+alt+f1
+2004-11-15_03.ascii.txt|1148|HrdwrBoB: thanks :-)
+2004-11-15_03.ascii.txt|1149|ok will give it a go :)
+2004-11-15_03.ascii.txt|1176|=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1151|so i don't need to apt-get install linux-686 or whatever the binarydriverhowto said?
+2004-11-15_03.ascii.txt|1152|ahh, yes. you have to switch kernel to :-).
+2004-11-15_03.ascii.txt|1153|phill: that makes it easier, because you have to restart to make the new kernel load ;-).
+2004-11-15_03.ascii.txt|1154|Hi all. Is this a good place to ask for some technical help on installing ubuntu on some hardware which is being difficult?
+2004-11-15_03.ascii.txt|1155|=== Striss [~Strain@blk-222-170-205.eastlink.ca]  has joined #Ubuntu
+2004-11-15_03.ascii.txt|1156|woo fluxbox is working perfect
+2004-11-15_03.ascii.txt|1157|ubuntu is so great
+2004-11-15_03.ascii.txt|1158|i have to what? :(
+2004-11-15_03.ascii.txt|1159|I've got an IBM ThinkCenter with a SATA chipset which I can't get working.
+2004-11-15_03.ascii.txt|1160|phill: follow the howto :-)
+2004-11-15_03.ascii.txt|1161|ok
+2004-11-15_03.ascii.txt|1162|=== Elroy-J [~mirak@adsl-68-74-28-228.dsl.sfldmi.ameritech.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1163|bob2: i am going to /msg you now
+2004-11-15_03.ascii.txt|1164|since i'm using a 386 kernel at the moment i should just get that and it will replace my current one?
+2004-11-15_03.ascii.txt|1165|phill: you need to run 686 yes.
+2004-11-15_03.ascii.txt|1166|oh
+2004-11-15_03.ascii.txt|1167|i need to get linux-686
+2004-11-15_03.ascii.txt|1168|?
+2004-11-15_03.ascii.txt|1179|yes
+2004-11-15_03.ascii.txt|1170|and then make sure grub uses that?
+2004-11-15_03.ascii.txt|1171|at what point do i reboot? after the kernel installs and then continue isntalling fglrx after i have linux-686 going? will linux-686 pickup my nvidia agpgart?
+2004-11-15_03.ascii.txt|1172|can I do a cryptoloop on my root running reiserfs?
+2004-11-15_03.ascii.txt|1173|=== timello [~tiago@201.7.63.18]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1174|phill: install linux-686 and fglrx-driver, then sed then reboot and it will work.
+2004-11-15_03.ascii.txt|1218|=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has left #ubuntu []
+2004-11-15_03.ascii.txt|1176|=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1177|natfallo: alright. last time i tried x wouldn't start :( but i'll give it another shot
+2004-11-15_03.ascii.txt|1178|last time, did you have i686-kernel?
+2004-11-15_03.ascii.txt|1179|yes
+2004-11-15_03.ascii.txt|1180|i did the guide
+2004-11-15_03.ascii.txt|1181|=== usual [~colin@alb-69-200-178-150.nycap.rr.com]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1182|Hey i just noticed this, ubuntu's ssh server is called openserver-ssh... is it still openssh just rebranded ?
+2004-11-15_03.ascii.txt|1183|=== danhunt [~dan_hunt@hssxpa204-83-181-43.sasknet.sk.ca]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1184|cuga: no it's not
+2004-11-15_03.ascii.txt|1185|it's called openssh-server
+2004-11-15_03.ascii.txt|1186|it is openssh.
+2004-11-15_03.ascii.txt|1187|lol
+2004-11-15_03.ascii.txt|1188|bob2: man, i must be dislexic.. if i could spell it
+2004-11-15_03.ascii.txt|1189|dyslexis
+2004-11-15_03.ascii.txt|1190|dyslexic
+2004-11-15_03.ascii.txt|1191|I can spell, just not type
+2004-11-15_03.ascii.txt|1192|i was only off by one letter.. tahts hot
+2004-11-15_03.ascii.txt|1193|=== _timello [~tiago@201.7.53.31]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1194|sorry, but I lost my link, repeating the question: anybody knows why I can't play any .mpg, etc? it shows me the sound, but not shows me the screen
+2004-11-15_03.ascii.txt|1195|RestrictedFormats on the wiki
+2004-11-15_03.ascii.txt|1196|_timello: probably missing codecs
+2004-11-15_03.ascii.txt|1197|hmm
+2004-11-15_03.ascii.txt|1198|anyone else got troubles with docbook-dsssl?
+2004-11-15_03.ascii.txt|1199|=== dasenjo [~dasenjo@201.245.164.26]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1200|version 1.57-4
+2004-11-15_03.ascii.txt|1201|typo
+2004-11-15_03.ascii.txt|1202|version 1.78-4
+2004-11-15_03.ascii.txt|1203|check http://www.desktopos.com/reviews.php?op=PrintReview&id=21 for .mpg tips.
+2004-11-15_03.ascii.txt|1204|hmm, odd
+2004-11-15_03.ascii.txt|1205|it works now :-P
+2004-11-15_03.ascii.txt|1206|=== atariboy [~atari@dsl-203-142-136-122.mel.directcorp.net.au]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1207|finally I'm on warty again ;-)
+2004-11-15_03.ascii.txt|1208|takes a bit more to downgrade through aptitude than upgrade ;-)
+2004-11-15_03.ascii.txt|1209|=== natea [~natea@h000f66a887c6.ne.client2.attbi.com]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1210|danhunt, I installed mplayer and the essential codecs package, but it still isn't working. I didn't find why
+2004-11-15_03.ascii.txt|1211|_timello: run mplayer from a terminal and check the output?
+2004-11-15_03.ascii.txt|1212|it shows errors like: can't open ~/.mplayer/codecs.conf, font, but I don't think so that it is the real problem
+2004-11-15_03.ascii.txt|1213|it's not an error, it's a warning
+2004-11-15_03.ascii.txt|1214|yes, sorry
+2004-11-15_03.ascii.txt|1215|how do I enable panel support in xchat?
+2004-11-15_03.ascii.txt|1216|=== _timello is now known as timello
+2004-11-15_03.ascii.txt|1217|=== doko [doko@dsl-082-082-066-197.arcor-ip.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1218|=== ghc [~geoffc@sdcarl02.strategicdata.com.au]  has left #ubuntu []
+2004-11-15_03.ascii.txt|1219|maybe has a package for X that allows it? Totem doesn't show me nothing either
+2004-11-15_03.ascii.txt|1220|=== poin__t [point@203.130.197.108]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1221|I'm using a nvidia gforce mx440
+2004-11-15_03.ascii.txt|1222|billytwowilly: panel support = ?
+2004-11-15_03.ascii.txt|1223|timello: You installed the w32codecs package eh? Tried changing from totem-gst to totem-xine ?
+2004-11-15_03.ascii.txt|1224|Pizbit, just for mplayer... I' ll go try
+2004-11-15_03.ascii.txt|1225|(although personally I use xine)
+2004-11-15_03.ascii.txt|1226|apt-get install xine-ui?
+2004-11-15_03.ascii.txt|1227|=== jg [~jg@h005018015b26.ne.client2.attbi.com]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1228|Yeah
+2004-11-15_03.ascii.txt|1229|=== janice [~janice@adsl-11-179-21.mia.bellsouth.net]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1230|WTF!
+2004-11-15_03.ascii.txt|1231|=== benh` [~benh@h000c414a0141.ne.client2.attbi.com]  has joined #ubuntu
+2004-11-15_03.ascii.txt|1232|Hi All! I took the plunge and installed Ubuntu. However, I need some help.
+2004-11-15_03.ascii.txt|1233|excellent
+2004-11-15_03.ascii.txt|1234|@ogre:/mnt/mirrors/ubuntu/pool/main/g/gnutls10$ ls -al
+2004-11-15_03.ascii.txt|1235|lrwxrwxrwx    1 root     root           77 2004-11-02 22:07 libgnutls10-dev_1.0.4-3ubuntu1_amd64.deb -> ../../../../pool/universe/g/gnutls10/libgnutls10-dev_1.0.4-3ubuntu1_amd64.deb
+2004-11-15_03.ascii.txt|1236|is it possible (or desirable) to dist-upgrade to hoary?
+2004-11-15_03.ascii.txt|1237|benh`: yes and maybe
+2004-11-15_03.ascii.txt|1238|ok, just s/wart/hoary in sources.list?
+2004-11-15_03.ascii.txt|1239|Pizbit, it comes with codecs?
+2004-11-15_03.ascii.txt|1240|HrdwrBoB: Ubuntu has given me excellent results with TVtime too
+2004-11-15_03.ascii.txt|1241|much better on my old wintv card
+2004-11-15_03.ascii.txt|1242|than mandrake
+2004-11-15_03.ascii.txt|1243|benh`: are you willing to deal with broken things and to file bug reports?
+2004-11-15_03.ascii.txt|1244|I have an unsupported USRobotics wireless PCI card and I need to use ndiswrapper. Unfortunately, the install cd (Warty 4.10 Full Release) does not have ndiswrapper. What is the URL from the ubutnu website that I can download it from?
+2004-11-15_03.ascii.txt|1245|heh
+2004-11-15_03.ascii.txt|1246|good to hear :)
+2004-11-15_03.ascii.txt|1247|janice: if you start synaptic
+2004-11-15_03.ascii.txt|1248|and you enable 'restricted'
+2004-11-15_03.ascii.txt|1249|you can install ndiswrapper
+2004-11-15_03.ascii.txt|1250|bob2, depends on how broken and yes
+2005-06-27_12.ascii.txt|991|?
+2005-06-27_12.ascii.txt|992|just delete the lines?
+2005-06-27_12.ascii.txt|993|that would be a start
+2005-06-27_12.ascii.txt|1045|err
+2005-06-27_12.ascii.txt|1171|bob2
+2005-06-27_12.ascii.txt|996|you installed it from source, so I ddon't know where you put the rest of the bits
+2005-06-27_12.ascii.txt|997|Why not just put in the winXP disc and make repair the system?
+2005-06-27_12.ascii.txt|998|captiventfs is on my EMPTY NTFS hd
+2005-06-27_12.ascii.txt|999|windows is on hda1
+2005-06-27_12.ascii.txt|1000|microhaxo: ok!
+2005-06-27_12.ascii.txt|1001|oga: please keep things in the channel
+2005-06-27_12.ascii.txt|1002|bob2: that link isn't of any use... it doesnt help me get the codecs ?:S
+2005-06-27_12.ascii.txt|1003|oga: all I can suggest is reading the howto again and making sure you followed all the steps
+2005-06-27_12.ascii.txt|1004|thanks bob2
+2005-06-27_12.ascii.txt|1005|oga: and that the drivers support your card
+2005-06-27_12.ascii.txt|1006|God dammit, now i need to go buy a new windowsxp cd
+2005-06-27_12.ascii.txt|1007|":|"
+2005-06-27_12.ascii.txt|1008|why on earth would you need to do that?
+2005-06-27_12.ascii.txt|1009|mine is Scratched to hell
+2005-06-27_12.ascii.txt|1010|if you installed windows, presumably you own a windows disk
+2005-06-27_12.ascii.txt|1011|its Scratched
+2005-06-27_12.ascii.txt|1012|i havent had to reinstall windows for EVER
+2005-06-27_12.ascii.txt|1013|it works FLAWLESSLY
+2005-06-27_12.ascii.txt|1014|buy pirated .... lots here
+2005-06-27_12.ascii.txt|1015|just by a cd de-scratcher
+2005-06-27_12.ascii.txt|1016|=== n3C [~n3C@klik27.klik.bydgoszcz.pl]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1017|pirated doesnt give me updates
+2005-06-27_12.ascii.txt|1018|yes it does .. it does for us here
+2005-06-27_12.ascii.txt|1019|annnnnyway
+2005-06-27_12.ascii.txt|1020|heheheheh
+2005-06-27_12.ascii.txt|1021|awn your cd--key isn't scratched right..?
+2005-06-27_12.ascii.txt|1022|hi i will take over my xp computer with my ubuntu pc how? i tright it with terminal server client but err
+2005-06-27_12.ascii.txt|1023|sorrry am not so techie, .. can't help you people who need help
+2005-06-27_12.ascii.txt|1024|i need help too
+2005-06-27_12.ascii.txt|1025|i dont have my cd key anymore, if i can boot into windows and retreive it
+2005-06-27_12.ascii.txt|1026|:P
+2005-06-27_12.ascii.txt|1027|=== shock [~shockwave@dsl-082-082-155-216.arcor-ip.net]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1028|hehe there is a cd key gen for xp
+2005-06-27_12.ascii.txt|1029|Ubuntu, Have you activated the Terminal server on your windows computer?
+2005-06-27_12.ascii.txt|1030|So does anyone know how i can get w32codecs installed? i just get file missing install candidate
+2005-06-27_12.ascii.txt|1031|=== BraD [~simple@78f14c649ad397c1.session.tor]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1032|=== ztonzy [~ztonzy@ztonzy.artist.blender]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1033|lukus001: Is your repositories updated?
+2005-06-27_12.ascii.txt|1034|=== bfsPaul [~paul@host81-138-210-156.in-addr.btopenworld.com]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1035|yes ssh i believe secure security client
+2005-06-27_12.ascii.txt|1036|"xabbu|: yes they are"
+2005-06-27_12.ascii.txt|1037|Okey.
+2005-06-27_12.ascii.txt|1038|lukus001: just get the tarball from mplayer.hu
+2005-06-27_12.ascii.txt|1039|=== Swynndla [~Swynndla@210-54-11-182.ipsm.net.nz]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1040|I need a better ntfs reader than the default (better error-handling), is there any such thing?
+2005-06-27_12.ascii.txt|1041|is installing .deb files individually dangerous? I've heard it can screw the system over if they fail!
+2005-06-27_12.ascii.txt|1042|microhaxo: Well, thats your fault. Why on earth would you store your cd-key on your harddrive?
+2005-06-27_12.ascii.txt|1043|nubbe: no
+2005-06-27_12.ascii.txt|1044|if i install form source how do i uninstall
+2005-06-27_12.ascii.txt|1045|err
+2005-06-27_12.ascii.txt|1046|cus i never had to use it
+2005-06-27_12.ascii.txt|1047|i didnt store it
+2005-06-27_12.ascii.txt|1048|i can get a program to read it
+2005-06-27_12.ascii.txt|1049|=== DagaZ [~rolle@h34n1fls35o858.telia.com]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1050|Hylas: not if they're from ubuntu, but in practice you won't need to do that
+2005-06-27_12.ascii.txt|1051|like i said there is a way to change it and update it
+2005-06-27_12.ascii.txt|1052|off of windows
+2005-06-27_12.ascii.txt|1053|bob2, that's bad :(
+2005-06-27_12.ascii.txt|1054|with a keygen
+2005-06-27_12.ascii.txt|1055|for me
+2005-06-27_12.ascii.txt|1056|nubbe: why?
+2005-06-27_12.ascii.txt|1057|=== Nikopol [~mambo@i-195-137-15-67.freedom2surf.net]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1058|anyway, all this windows stuff is off topic
+2005-06-27_12.ascii.txt|1059|take it to #ubuntu-offtopic
+2005-06-27_12.ascii.txt|1060|yes i had a simple question how do i uninstall something i installed from source
+2005-06-27_12.ascii.txt|1061|bob2: that site isnt in english :s lol
+2005-06-27_12.ascii.txt|1062|ubuntu, You need the have a ssh server installed on windows if you are to use ssh.
+2005-06-27_12.ascii.txt|1232|bah
+2005-06-27_12.ascii.txt|1064|because I've got xmms and mplayer here as rpm's and I was going to convert them to deb with alien then install them. I have a slow internet connection so i try to stay away from downloading
+2005-06-27_12.ascii.txt|1065|bob2, I could read some files with xp, but not with ubuntu, that I need...
+2005-06-27_12.ascii.txt|1066|If linux could actually run a damn game, CEDEGA is complete BS, wont run Counterstrike source whatso ever..
+2005-06-27_12.ascii.txt|1067|"CDK: you can't, in general.  ""make uninstall"" might work if yo ustill have the original source tree still"
+2005-06-27_12.ascii.txt|1068|microhaxo: so, if you're a paying customer, go to their site and vote for it
+2005-06-27_12.ascii.txt|1069|i c
+2005-06-27_12.ascii.txt|1070|Hylas: I'd strongly recommend not doing that
+2005-06-27_12.ascii.txt|1071|ok
+2005-06-27_12.ascii.txt|1072|"it is ""Supported"""
+2005-06-27_12.ascii.txt|1073|bob2, and I know th aprtition is flaky, so I guess win handles the errors better
+2005-06-27_12.ascii.txt|1074|nubbe> what  files?
+2005-06-27_12.ascii.txt|1075|CDK: in future, checkinstall and stow are useful for that
+2005-06-27_12.ascii.txt|1076|microhaxo: then file a bug with them if it doesn't work
+2005-06-27_12.ascii.txt|1077|but just my luck it wont run on my sys
+2005-06-27_12.ascii.txt|1078|xabbul: ok i use secure shell client
+2005-06-27_12.ascii.txt|1079|okey
+2005-06-27_12.ascii.txt|1080|microhaxo: ranting here isn't going to help it work, sorry
+2005-06-27_12.ascii.txt|1081|nothing will help
+2005-06-27_12.ascii.txt|1082|=== ThE__OnE [~mojojojo@ool-4577fc07.dyn.optonline.net]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1083|GNULinuxer, why?
+2005-06-27_12.ascii.txt|1084|im pissed
+2005-06-27_12.ascii.txt|1085|microhaxo: then be pissed somewhere else
+2005-06-27_12.ascii.txt|1086|CDK: plese keep it on-channel
+2005-06-27_12.ascii.txt|1087|nubbe> you said you can't view them in ubuntu ... that's why
+2005-06-27_12.ascii.txt|1088|CDK: they do different things, but checkinstall is probably simpler
+2005-06-27_12.ascii.txt|1089|sorry m8 i dont know how to talk to just you
+2005-06-27_12.ascii.txt|1090|GNULinuxer, No, I said I can't read them
+2005-06-27_12.ascii.txt|1091|GNULinuxer, As in ubuntu can't get the data from the ntfs part
+2005-06-27_12.ascii.txt|1092|ARG, i cannot connect to this FTP, it needs SECURE connection but when i use SSH2 it times out?!?!
+2005-06-27_12.ascii.txt|1093|nubbe> aha
+2005-06-27_12.ascii.txt|1094|using Gftp
+2005-06-27_12.ascii.txt|1095|Anyone knows of any hardware checking software for linux. That sees if something is broken like agp-ports and stuff.
+2005-06-27_12.ascii.txt|1096|=== kafeine [~kori@212.39.73.142]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1097|microhaxo: ssh has nothing to do with ftp over ssl
+2005-06-27_12.ascii.txt|1098|=== opteron [~opteron@80-218-68-148.dclient.hispeed.ch]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1099|"xabbu|: I'm pretty sure it's not possible to detect that from software"
+2005-06-27_12.ascii.txt|1100|then how do i connect securely?
+2005-06-27_12.ascii.txt|1101|Okey...
+2005-06-27_12.ascii.txt|1102|=== Quartus [Quartus@c-d080e255.54-2-64736c10.cust.bredbandsbolaget.se]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1117|gFTP
+2005-06-27_12.ascii.txt|1104|nubbe> NTFS read support is there in the ubuntu kernel
+2005-06-27_12.ascii.txt|1105|=== teroedni_ [~teroedni@ti411310a080-3228.bb.online.no]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1106|GNULinuxer, yes, but that doesn't cut it for me, that's why I asked if there was sometething better, more elaborate out there
+2005-06-27_12.ascii.txt|1107|nubbe> can you succesfully mount the partition?
+2005-06-27_12.ascii.txt|1108|=== nir [~Element@line134-128.adsl.actcom.co.il]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1109|bob2: how do i connect securely to this ftp?
+2005-06-27_12.ascii.txt|1110|=== teroedni__ [~teroedni@ti411310a080-3228.bb.online.no]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1111|"microhaxo: I don't know what ""ftp"" you're talking about"
+2005-06-27_12.ascii.txt|1112|i said
+2005-06-27_12.ascii.txt|1113|I hear gftp can do ftp/ssl, tho
+2005-06-27_12.ascii.txt|1114|its my prif ftp
+2005-06-27_12.ascii.txt|1115|anyway
+2005-06-27_12.ascii.txt|1116|"""prif"" is not a word"
+2005-06-27_12.ascii.txt|1117|gFTP
+2005-06-27_12.ascii.txt|1118|itsa  damn TOPSITE Mk
+2005-06-27_12.ascii.txt|1119|so
+2005-06-27_12.ascii.txt|1120|"I have no idea what a ""TOPSITE Mk"" is, either"
+2005-06-27_12.ascii.txt|1121|you dont need to know
+2005-06-27_12.ascii.txt|1122|GNULinuxer, I can mount and read most of it, just a few files that has errors, and did under xp too, but I just didn't realise that before, since I could read them with xp (that is no more)
+2005-06-27_12.ascii.txt|1123|QUOTE WHOIS %s %s
+2005-06-27_12.ascii.txt|1124|i need to connect to a server with SECURE Access.
+2005-06-27_12.ascii.txt|1125|nubbe> it's corrupt now
+2005-06-27_12.ascii.txt|1126|microhaxo: throwing around buzzwords doesn't help
+2005-06-27_12.ascii.txt|1127|GNULinuxer, NOOO?? really??   ;)
+2005-06-27_12.ascii.txt|1128|microhaxo: presumably it speaks ftp/ssl
+2005-06-27_12.ascii.txt|1129|microhaxo: if that doesn't work, talk to whoever runs it
+2005-06-27_12.ascii.txt|1130|nubbe> the xp failure must have happended after you tried to read them from ubuntu, right?
+2005-06-27_12.ascii.txt|1131|yea sure, but how do i select this option in gFTP?
+2005-06-27_12.ascii.txt|1132|there is just drop down boxes
+2005-06-27_12.ascii.txt|1133|nubbe> just apt-get install ntfsprogs
+2005-06-27_12.ascii.txt|1134|ftp , http ,local ,ssh2,fsp
+2005-06-27_12.ascii.txt|1135|[12:15] <opteron>
+2005-06-27_12.ascii.txt|1136|GNULinuxer, I'll look at them
+2005-06-27_12.ascii.txt|1137|nubbe> and use ntfsfix from there and try to fix it
+2005-06-27_12.ascii.txt|1138|530 USE SECURE CONNECTION
+2005-06-27_12.ascii.txt|1139|GNULinuxer, that I don't think I'll do
+2005-06-27_12.ascii.txt|1140|=== GNULinuxer *shrugs*
+2005-06-27_12.ascii.txt|1141|=== philc [~reformist@63.99.57.47]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1142|No takers? :-(
+2005-06-27_12.ascii.txt|1143|I'd use a less obscure firewall system, I guess
+2005-06-27_12.ascii.txt|1144|like?
+2005-06-27_12.ascii.txt|1145|=== tapia [~tapia@163.Red-80-25-218.pooles.rima-tde.net]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1146|hi
+2005-06-27_12.ascii.txt|1147|I have a problem with my ubuntu
+2005-06-27_12.ascii.txt|1148|I have it installed Breezy in my ibook G4
+2005-06-27_12.ascii.txt|1149|=== floo [~floo@host-84-9-78-134.bulldogdsl.com]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1150|is there an easy to use FTP app?
+2005-06-27_12.ascii.txt|1151|=== Vassilis [~ubuntu@adsl99-30dynamic.salonica.acn.gr]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1152|gftp is pretty easy to use
+2005-06-27_12.ascii.txt|1153|and some dist-upgrade has broken my X keyboard layout
+2005-06-27_12.ascii.txt|1154|does anyone know anyting about name resolution?
+2005-06-27_12.ascii.txt|1155|lol thats what im using
+2005-06-27_12.ascii.txt|1156|tapia: you're using hoary, right?
+2005-06-27_12.ascii.txt|1157|and it wont connect meh
+2005-06-27_12.ascii.txt|1158|bob2: no, breezy
+2005-06-27_12.ascii.txt|1159|it worked rigth till today
+2005-06-27_12.ascii.txt|1160|whats the diff between breezy and hoary?
+2005-06-27_12.ascii.txt|1161|microhaxo: lftp does it
+2005-06-27_12.ascii.txt|1162|breezy is the development branch
+2005-06-27_12.ascii.txt|1163|i had it configured for spanish layour
+2005-06-27_12.ascii.txt|1164|layout
+2005-06-27_12.ascii.txt|1165|which is not recommended for people who can't fix their own systems
+2005-06-27_12.ascii.txt|1166|but now it is english
+2005-06-27_12.ascii.txt|1167|I guess X is broken again; you'll have to wait for daniel to fix it
+2005-06-27_12.ascii.txt|1168|try looking ni bugzilla, there's probably a workaround already
+2005-06-27_12.ascii.txt|1169|and gnome-keyboard-properties crashes if i try to change the layout
+2005-06-27_12.ascii.txt|1170|=== sly [~sly@host81-153-79-232.range81-153.btcentralplus.com]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1171|bob2
+2005-06-27_12.ascii.txt|1172|says i already got it
+2005-06-27_12.ascii.txt|1173|is it gui or terminal?
+2005-06-27_12.ascii.txt|1174|cool
+2005-06-27_12.ascii.txt|1175|terminal
+2005-06-27_12.ascii.txt|1176|aww
+2005-06-27_12.ascii.txt|1177|=== Dalkus [~David@81-86-159-34.dsl.pipex.com]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1178|I thought all leet kiddies knew how to use command line ftp clients
+2005-06-27_12.ascii.txt|1179|im a windows user dammit
+2005-06-27_12.ascii.txt|1180|its only day 10 on linux
+2005-06-27_12.ascii.txt|1181|you use a gui client on windows? heh
+2005-06-27_12.ascii.txt|1182|wtf
+2005-06-27_12.ascii.txt|1183|microhaxo, you'll get used to it in no time :)
+2005-06-27_12.ascii.txt|1184|it's easy to use
+2005-06-27_12.ascii.txt|1185|"they dont make a ""Terminal"" FTP client for windows"
+2005-06-27_12.ascii.txt|1241|hah
+2005-06-27_12.ascii.txt|1187|microhaxo, theres plenty of gui ftp clients for linux too if you like
+2005-06-27_12.ascii.txt|1188|microhaxo: er, it ships with one
+2005-06-27_12.ascii.txt|1189|microhaxo, they do
+2005-06-27_12.ascii.txt|1190|microhaxo: type ftp in a command window sometime
+2005-06-27_12.ascii.txt|1191|microhaxo: apt-get install gftp-gtk
+2005-06-27_12.ascii.txt|1192|k
+2005-06-27_12.ascii.txt|1193|thanks
+2005-06-27_12.ascii.txt|1194|=== fabrice [~desrefa@freedom.rd.francetelecom.com]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1195|i have gftp
+2005-06-27_12.ascii.txt|1237|lol
+2005-06-27_12.ascii.txt|1197|i need a diff one
+2005-06-27_12.ascii.txt|1198|it wont let me connect securely
+2005-06-27_12.ascii.txt|1199|=== derJunior [~derJunior@p549FBDF9.dip.t-dialin.net]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1200|=== odie5533 [~odie5533@c-67-175-208-140.hsd1.il.comcast.net]  has joined #ubuntu
+2005-06-27_12.ascii.txt|1201|Using Telnet to a website, what command downloads the page?
+2005-06-27_12.ascii.txt|1202|"can anyone help me with a problem?  I keep getting ""temporary failure in name resolution""  I can ping ip addrsses and the router but no domains.  I've checked resolv.conf and everything's ok there similarly with /etc/hosts... aaarrgghh!!! any ideas?"
+2005-06-27_12.ascii.txt|1203|odie5533: GET
+2005-06-27_12.ascii.txt|1204|floo: can you ping the nameserves in /etc/resov.conf?
+2005-06-27_12.ascii.txt|1205|GET what?
+2005-06-27_12.ascii.txt|1206|"just ""GET"""
+2005-06-27_12.ascii.txt|1207|thats the command
+2005-06-27_12.ascii.txt|1208|yes no probs there
+2005-06-27_12.ascii.txt|1209|GET $path HTTP/1.1
+2005-06-27_12.ascii.txt|1210|or just ues the GET command from libwww-perl
+2005-06-27_12.ascii.txt|1211|or wget
+2005-06-27_12.ascii.txt|1212|or ...
+2005-06-27_12.ascii.txt|1213|you need HOST too if you specify HTTP/1.1
+2005-06-27_12.ascii.txt|1214|hmm, right
+2005-06-27_12.ascii.txt|1215|the only reason why i dont like linux is: i spent lots of money on my nifty RADEON X800XT PE and linux cant do anything with it.
+2005-06-27_12.ascii.txt|1216|ok I'll give that a go, thanks
+2005-06-27_12.ascii.txt|1217|that's ATI's fault, not linux's
+2005-06-27_12.ascii.txt|1218|microhaxo: ebay
+2005-06-27_12.ascii.txt|1232|bah
+2005-06-27_12.ascii.txt|1220|no i am a GAMER
+2005-06-27_12.ascii.txt|1221|sell it, and buy a real card, an nvidia
+2005-06-27_12.ascii.txt|1222|me too
+2005-06-27_12.ascii.txt|1223|BAH
+2005-06-27_12.ascii.txt|1224|nvidia sucks ass
+2005-06-27_12.ascii.txt|1225|:O
+2005-06-27_12.ascii.txt|1226|i can own any of you in a 3dmark 05 benchmark
+2005-06-27_12.ascii.txt|1227|yeah my fx5200 works just fine in linux ;)
+2005-06-27_12.ascii.txt|1228|microhaxo: try to actually be polite
+2005-06-27_12.ascii.txt|1229|=== odie5533 chokes
+2005-06-27_12.ascii.txt|1230|and no one cares how big your video card is
+2005-06-27_12.ascii.txt|1231|xabul: ill tright it but connection refused he says
+2005-06-27_12.ascii.txt|1232|bah
+2005-06-27_12.ascii.txt|1233|mines like bigger than my box
+2005-06-27_12.ascii.txt|1234|bob2, talk for yoruself
+2005-06-27_12.ascii.txt|1235|it wont even fit in
+2005-06-27_12.ascii.txt|1236|so i win
+2005-06-27_12.ascii.txt|1237|lol
+2005-06-27_12.ascii.txt|1243|no
+2005-06-27_12.ascii.txt|1239|mine has 16 pipelines
+2005-06-27_12.ascii.txt|1240|anyone to spare a minute for a newbie?
+2005-06-27_12.ascii.txt|1241|hah
+2005-06-27_12.ascii.txt|1242|mine has its own power supply, and two led fans, i win
+2005-06-27_12.ascii.txt|1243|no
+2005-06-27_12.ascii.txt|1244|and my radeon works fine in ubuntu
+2005-06-27_12.ascii.txt|1245|mine works
+2005-06-27_12.ascii.txt|1246|Vassilis, dont ask to ask, just ask :)
+2005-06-27_12.ascii.txt|1247|but WHAT Games can i play?!
+2005-06-27_12.ascii.txt|1248|is there a way to pm just not fill the window?
+2005-06-27_12.ascii.txt|1249|who wants to play tux racer, integrated graphics card can run that 50FPS +
+2005-06-27_12.ascii.txt|1250|yea
